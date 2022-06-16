@@ -1,0 +1,96 @@
+.home{
+    height: 100%;
+    /* background: url("../img/home_bg.jpg"); */
+    background-color: rgb(7,155,213);
+    background-size: cover;
+}
+.home>p{
+    margin: 4rem 0 4rem 0;
+    color: rgb(255, 255, 255);
+    font-size: 1.785rem;
+    font-weight: 700;
+    text-align: center;
+}
+.home>section{
+    display: flex;
+    justify-content: space-around;
+}
+.home .encuentra, .home .busca{
+    margin-top: 10%;
+    display: flex;
+    background-color: rgb(7,155,213);
+    box-shadow: 7px 7px 19px 0px rgba(0,0,0,0.22);
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    height: 6rem;
+    width: 10rem;
+}
+.works{
+    display:flex;
+    flex-direction: column;
+}
+.works>div{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+}
+.electricity, .painting, .technic, .plumbing, .brick, .metal, .internet, .wood{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vh;
+    height: 15vw;
+    margin: .5rem .5rem .5rem .5rem;
+
+}
+
+.electricity{
+    background: url("../img/home_bg.jpg"); 
+    background-size: cover;
+}
+.painting{
+    background: url("../img/home_bg.jpg"); 
+    background-size: cover;
+}
+.technic{
+    background: url("../img/home_bg.jpg"); 
+    background-size: cover;
+}
+.plumbing{
+    background: url("../img/home_bg.jpg"); 
+    background-size: cover;
+}
+.brick{
+    background: url("../img/home_bg.jpg"); 
+    background-size: cover;
+}
+.metal{
+    background: url("../img/home_bg.jpg"); 
+    background-size: cover;
+}
+.internet{
+    background: url("../img/home_bg.jpg"); 
+    background-size: cover;
+}
+.wood{
+    background: url("../img/home_bg.jpg"); 
+    background-size: cover;
+}
+.stlIcon{
+    color: rgb(255, 213, 0);
+    width: 100%;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stlTitle{
+    color: rgb(255, 213, 0);
+    font-size: 1.2rem;
+    font-weight:700;
+}
