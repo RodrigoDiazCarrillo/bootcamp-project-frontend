@@ -1,6 +1,5 @@
 .home{
     height: 100%;
-    /* background: url("../img/home_bg.jpg"); */
     background-color: rgb(7,155,213);
     background-size: cover;
 }
@@ -12,7 +11,7 @@
     text-align: center;
 }
 .home>p>u{
-    color: rgb(255, 149, 0)
+    color: rgb(237, 108, 22);
 }
 .home>section{
     display: flex;
@@ -52,7 +51,14 @@
 }
 .ad-description>a{
     margin-top: 2rem;
+    width: 3.5em;
+    margin: 0 auto;
 }
+.ad-description>a:hover{
+    border: solid 1px white;
+    border-radius: 8px;
+}
+
 .box1{
     margin-top: 6rem;
 }

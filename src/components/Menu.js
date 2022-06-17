@@ -6,7 +6,7 @@ export const Menu = () => {
 
     return (
       <section className="menu">
-        <img className="logo" src={logo}alt="logo" />
+        <a href="http://localhost:3000/" ><img className="logo" src={logo}alt="logo" /></a>
         <ul>
           <li>
             <a href="#a">Home</a>

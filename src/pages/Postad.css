@@ -1,0 +1,81 @@
+.postbox{
+    border: solid 3px rgb(237, 108, 22);
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem 0 1rem 0;
+    margin-top: 5vh;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.postbox img{
+    width: 80%;
+}
+.postbox form{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.postbox form>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 4rem;
+}
+.postbox form input{
+    margin: .5rem 0 .5rem 0;
+    height: 1.5rem;
+    font-size: 1rem;
+    border-radius: 0px;
+}
+.postbox a{
+    text-decoration: none;
+    color: black;
+}
+.postbox a:hover{
+    color:rgb(237, 108, 22);
+}
+.email{
+    margin-top: 1rem;
+    width: 70%;
+}
+.postbox .loginbtn{
+    margin-top: 1rem;
+    height: 2.5rem;
+    width: 30%;
+    font-size: 1rem;
+    color: white;
+    border-radius: 4px;
+    border: solid 2px rgb(237, 108, 22);
+    background: rgb(237, 108, 22);
+}
+.postbox .loginbtn:hover{
+    cursor: pointer;
+    border: solid 2px rgb(204, 85, 0);
+    background: rgb(204, 85, 0);
+}
+#postselect{
+    border-radius: 0px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: 50%;
+    color: rgb(0, 0, 0);
+    border: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    border: solid 2px rgb(237, 108, 22);
+}
+#postselect:focus{
+    border-radius: 0px;
+    background-color: rgb(255, 255, 255);
+    border: solid 2px rgb(237, 108, 22);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    outline: none;
+}
+#ad-description, .postbox form input{
+    max-width: 90%;
+    min-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}

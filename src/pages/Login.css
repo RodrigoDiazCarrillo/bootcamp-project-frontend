@@ -1,0 +1,53 @@
+.logbox{
+    border: solid 3px rgb(237, 108, 22);
+    width: 30%;
+    margin: 0 auto;
+    padding: 1rem 0 1rem 0;
+    margin-top: 30vh;
+    border-radius: 15px;
+}
+.logbox img{
+    width: 80%;
+}
+.logbox form{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.logbox form>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 4rem;
+}
+.logbox form input{
+    margin: .5rem 0 .5rem 0;
+    height: 1.5rem;
+    font-size: 1rem;
+}
+.logbox a{
+    text-decoration: none;
+    color: black;
+}
+.logbox a:hover{
+    color:rgb(237, 108, 22);
+}
+.email{
+    margin-top: 1rem;
+    width: 70%;
+}
+.logbox .loginbtn{
+    margin-top: 1rem;
+    height: 2.5rem;
+    width: 30%;
+    font-size: 1rem;
+    color: white;
+    border-radius: 4px;
+    border: solid 2px rgb(237, 108, 22);
+    background: rgb(237, 108, 22);
+}
+.logbox .loginbtn:hover{
+    cursor: pointer;
+    border: solid 2px rgb(204, 85, 0);
+    background: rgb(204, 85, 0);
+}

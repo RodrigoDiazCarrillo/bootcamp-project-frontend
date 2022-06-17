@@ -7,8 +7,8 @@ import { CgToolbox } from "react-icons/cg";
 import { FiTool} from "react-icons/fi";
 
 export const Home = () => {
-  const boxstyle = { color: "white", fontSize: "3.5em" }
-  const keystyle = { color: "white", fontSize: "3.5em" }
+  let boxstyle = { color: "white", fontSize: "3.5em" }
+
 
 
   return (
@@ -24,7 +24,7 @@ export const Home = () => {
           Publica un anuncio para que contacten contigo. Publica un anuncio para que contacten contigo. 
           Publica un anuncio para que contacten contigo
           </p>
-          <a><CgToolbox style={boxstyle} /></a>
+          <a href="http://localhost:3000/postad"><CgToolbox style={boxstyle} /></a>
           </div>
       </section>
       <section className="box1">

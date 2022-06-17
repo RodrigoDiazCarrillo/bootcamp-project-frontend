@@ -1,19 +1,41 @@
 // import { useContext, useState } from "react";
 // import { useNavigate, Navigate } from "react-router-dom";
 import { Footer } from "../components/Footer";
-import "./Login.css";
+import "./Register.css";
 import logo from "../img/logo.svg";
 
-export const Login = () => {
+export const Register = () => {
 
 
   return (
 
     <section>
-      <div className="logbox">
+      <div className="reg">
       <a href="http://localhost:3000/"><img className="logo" src={logo} alt="logo" /></a>
       <h1>Login</h1>
       <form onSubmit="">
+      <div>
+        <label htmlFor="name">First name</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          onChange=""
+          value=""
+        />
+        </div>
+
+        <div>
+        <label htmlFor="surname">Last name</label>
+        <input
+          id="surname"
+          name="surname"
+          type="text"
+          onChange=""
+          value=""
+        />
+        </div>
+
         <div>
         <label htmlFor="email">Email</label>
         <input
@@ -39,7 +61,6 @@ export const Login = () => {
         </div>
         
       </form>
-      <a href="http://localhost:3000/register">you are not registered yet?</a>
       </div>
       <Footer/>
     </section>
