@@ -1,7 +1,7 @@
 .menu{
     display: flex;
     flex-direction: row;
-    height: 5rem;
+    height: 7rem;
     align-items: center;
     background-color: white
 }
@@ -23,7 +23,7 @@
 }
 .menu .logo {
     height: 80%;
-    margin-left: 3rem;
+    margin-left: 2rem;
 }
 .menu .loginbtn{
     height: 2.5rem;
@@ -34,4 +34,7 @@
     background: rgb(7,155,213);
     margin-left: .5rem;
     margin-right: 2rem;
+}
+.menu .loginbtn:hover{
+    cursor: pointer;
 }
