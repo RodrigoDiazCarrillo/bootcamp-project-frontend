@@ -83,24 +83,24 @@
 }
 /* small */
 @media only screen and (min-width:576px) {
-
 }
-
 /* medium */
 @media only screen and (min-width:768px) {
   .menu .logo{
     height: 6rem;
-    width: 8rem;
-    margin-left: 2rem;
+    width: 18rem;
     background:url("../img/logo.svg");
-    background-size: cover;
+    height: 6rem;
+
+  background-size: cover;
   }
+  .menu .loginbtn,
+.dropbtn {
+  margin-right: 1rem;
 }
- /* largue */
-@media only screen and (min-width:992px) {
-
+.usericon{
+  margin-right: 1rem;
+  align-items: center;
+  display: flex;
 }
- /* Extra largue */
-@media only screen and (min-width:1200px) {
-
 }

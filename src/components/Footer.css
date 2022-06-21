@@ -1,13 +1,13 @@
 #footer{
     display: flex;
+    font-size: 1rem;
     justify-content: space-evenly;
     background-color: rgb(82, 82, 82);
     color: white;
     padding: 2rem 0 2rem 0;
 }
 .imgfooter{
-
-    justify-content: center;
+    margin-top: 1rem;
 }
 #footer>div{
     width: 20%;
@@ -18,7 +18,8 @@
     width: 100%;
 }
 
-#footer a{
+#footer a, p{
+    font-size: .8rem;
     color: white;
     text-decoration: none;
 }
@@ -26,4 +27,22 @@
     color: rgb(237, 108, 22);
     text-decoration: none;
     cursor: pointer;
+}
+/* small */
+@media only screen and (min-width:576px) {
+}
+/* medium */
+@media only screen and (min-width:768px) {
+    #footer a, p {
+        font-size: 1rem;
+        color: white;
+        text-decoration: none;
+    }
+  
+}
+ /* largue */
+@media only screen and (min-width:992px) {
+    .imgfooter{
+        justify-content: center;
+    }
 }

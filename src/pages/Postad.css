@@ -81,5 +81,31 @@
     max-width: 90%;
     min-width: 90%;
     margin: 0 auto;
-    margin-bottom: 2rem;
+}
+/* small */
+@media only screen and (min-width:576px) {
+    .postbox{
+        width: 40%;
+    }
+}
+/* medium */
+@media only screen and (min-width:768px) {
+    #ad-description, .postbox form input{
+        margin-bottom: 2rem;
+    }
+    .postbox{
+        width: 40%;
+    }
+}
+ /* largue */
+@media only screen and (min-width:992px) {
+    .postbox{
+        width: 35%;
+    }
+}
+ /* Extra largue */
+@media only screen and (min-width:1200px) {
+    .postbox{
+        width: 30%;
+    }
 }

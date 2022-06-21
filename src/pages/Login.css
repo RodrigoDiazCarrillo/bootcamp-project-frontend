@@ -1,9 +1,8 @@
 .logbox{
     border: solid 3px rgb(237, 108, 22);
-    width: 30%;
+    width: 80%;
     margin: 15vh auto;
     padding: 1rem 0 1rem 0;
-
     border-radius: 15px;
 }
 .logbox img{
@@ -23,6 +22,7 @@
 .logbox form input{
     margin: .5rem 0 .5rem 0;
     height: 1.5rem;
+    width: 50%;
     font-size: 1rem;
 }
 .logbox a{
@@ -50,4 +50,28 @@
     cursor: pointer;
     border: solid 2px rgb(204, 85, 0);
     background: rgb(204, 85, 0);
+}
+/* small */
+@media only screen and (min-width:576px) {
+    .logbox{
+        width: 65%;
+    }
+}
+/* medium */
+@media only screen and (min-width:768px) {
+    .logbox{
+        width: 40%;
+    }
+}
+ /* largue */
+@media only screen and (min-width:992px) {
+    .logbox{
+        width: 30%;
+    }
+}
+ /* Extra largue */
+@media only screen and (min-width:1200px) {
+    .logbox{
+        width: 20%;
+    }
 }

@@ -4,7 +4,8 @@
     background-size: cover;
 }
 .home>p{
-    margin: 4rem 0 4rem 0;
+    margin: 4rem auto;
+    width: 80%;
     color: rgb(255, 255, 255);
     font-size: 1.785rem;
     font-weight: 700;
@@ -33,13 +34,13 @@
     width: 10rem;
 }
 .post-ad{
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     width: 50%;
-    margin: 6em auto;
+    margin: 2em auto;
     padding: 1rem;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     background-color: rgb(20, 83, 137);
 }
 .post-ad>h2{
@@ -51,10 +52,10 @@
 .post-ad>p{
     color: rgb(255, 255, 255);
     width: 80%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
     text-align: center;
-    margin: 5rem auto;
+    margin: 2em auto;
     line-height: 2em;
 }
 .post-ad a{
@@ -83,11 +84,42 @@
     justify-content: center;
 }
 .box1>div>p{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: rgb(255, 255, 255);
     width: 40%;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 2rem 0 2rem 0;
+    padding: 0.5rem 0 0.5rem 0;
     background-color: rgba(237, 108, 22,0.5);
+}
+/* small */
+@media only screen and (min-width:576px) {
+}
+/* medium */
+@media only screen and (min-width:768px) {
+    .post-ad>p{
+        color: rgb(255, 255, 255);
+        width: 80%;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        margin: 4em auto;
+        line-height: 2em;
+    }
+    .box1>div>p{
+        font-size: 2rem;
+        color: rgb(255, 255, 255);
+        width: 40%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 2rem 0 2remrem 0;
+        background-color: rgba(237, 108, 22,0.5);
+    }
+}
+ /* largue */
+@media only screen and (min-width:992px) {
+
+}
+ /* Extra largue */
+@media only screen and (min-width:1200px) {
 }

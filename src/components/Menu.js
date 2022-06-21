@@ -19,9 +19,9 @@ export const Menu = () => {
         <div class="dropdown">
         <button class="dropbtn"><HiMenu style={menustyle} /></button>
           <div class="dropdown-content">
-            <a href="http://localhost:3000/search">About</a>
+            <a href="http://localhost:3000/about">About</a>
             <a href="http://localhost:3000/search">Search ads</a>
-            <a href="http://localhost:3000/search">Post your ad</a>
+            <a href="http://localhost:3000/postad">Post your ad</a>
           </div>
         </div>
         </div>

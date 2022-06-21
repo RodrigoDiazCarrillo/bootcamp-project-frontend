@@ -117,7 +117,7 @@ export const Login = () => {
         />
         </div>
         <div>
-        <button className="loginbtn" disabled={sendRequest} onClick={() => setSendRequest(true)}>Iniciar sesión</button>
+        <button className="loginbtn" disabled={sendRequest} onClick={() => setSendRequest(true)}>Log in</button>
         </div>
         
       </form>
