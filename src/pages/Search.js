@@ -1,14 +1,38 @@
-import { Navigate } from "react-router-dom";
 import "./Search.css";
 import { Menu } from "../components/Menu";
 import { Footer } from "../components/Footer";
-import { Workcards } from "../components/Workcards";
-import { CgToolbox } from "react-icons/cg";
-import { FiTool} from "react-icons/fi";
+import { useEffect, useState } from "react";
 
 export const Search = () => {
-  const boxstyle = { color: "white", fontSize: "3.5em" }
+  const [isLoading, setIsLoading] = useState(false);
+  const [ads, setAds] = useState("");
 
+  useEffect(() => {
+    
+      setIsLoading(true);
+   
+      fetch("http://127.0.0.1:8000/ad",{
+      method: 'GET' })
+      .then((response) => response.json())
+      .then((data) => {
+        setAds(data);
+        console.log(data);
+       
+        setIsLoading(false);
+       
+      });
+      
+    
+  },
+  []);
+
+  if (isLoading) {
+    return (
+      <div className="App">
+        <h1>Cargando...</h1>
+      </div>
+    );
+  }
 
 
   return (
@@ -31,6 +55,12 @@ export const Search = () => {
       <p className="srchtitle">Find maintenance and <u>repair services</u> for your home</p>
       </div>
       <hr></hr>
+
+    
+         { console.log(ads[1])}
+         
+        
+
       <Footer/>
     </section>
 

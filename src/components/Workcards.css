@@ -1,12 +1,16 @@
 .works{
     display:flex;
     flex-direction: column;
+    margin-bottom: 10rem;
 }
 .works>div{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 1rem 0 1rem;
+}
+.works>div>a{
+    text-decoration: none;
 }
 .electricity, .painting, .technic, .plumbing, .brick, .metal, .internet, .wood{
     display: flex;
@@ -134,9 +138,9 @@
         margin: .5rem .5rem .5rem .5rem;
     }
   }
-
+  
   /* medium */
-@media only screen and (min-width:768px) {
+  @media only screen and (min-width:768px) {
     .electricity, .painting, .technic, .plumbing, .brick, .metal, .internet, .wood{
         display: flex;
         flex-direction: column;
@@ -148,7 +152,7 @@
     }
   }
    /* largue */
-@media only screen and (min-width:992px) {
+  @media only screen and (min-width:992px) {
     .electricity, .painting, .technic, .plumbing, .brick, .metal, .internet, .wood{
         display: flex;
         flex-direction: column;
@@ -160,7 +164,7 @@
     }
   }
    /* Extra largue */
-@media only screen and (min-width:1200px) {
+  @media only screen and (min-width:1200px) {
     .electricity, .painting, .technic, .plumbing, .brick, .metal, .internet, .wood{
         width: 22%;
     }

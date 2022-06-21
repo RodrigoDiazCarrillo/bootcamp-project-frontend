@@ -1,10 +1,10 @@
-import { Navigate } from "react-router-dom";
+
 import "./Home.css";
 import { Menu } from "../components/Menu";
 import { Footer } from "../components/Footer";
 import { Workcards } from "../components/Workcards";
 import { CgToolbox } from "react-icons/cg";
-import { FiTool} from "react-icons/fi";
+
 
 export const Home = () => {
   let boxstyle = { color: "white", fontSize: "3.5em" }
@@ -17,15 +17,14 @@ export const Home = () => {
       <p>Find maintenance and <u>repair services</u> for your home</p>
       <Workcards/>
       <section className="post-ad">
-          <p>Post an ad</p>
-          <div className="ad-description">
-          
-          <p>Publica un anuncio para que contacten contigo. Publica un anuncio para que contacten contigo. 
-          Publica un anuncio para que contacten contigo. Publica un anuncio para que contacten contigo. 
-          Publica un anuncio para que contacten contigo
+          <h2>Post an ad</h2>         
+          <p>
+            post your <u>ad</u>, 
+           indicate what you want to <u>repair</u> 
+             &nbsp; and find an <u>expert</u>
           </p>
           <a href="http://localhost:3000/postad"><CgToolbox style={boxstyle} /></a>
-          </div>
+
       </section>
       <section className="box1">
 

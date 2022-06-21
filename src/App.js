@@ -1,5 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import { Login } from "./pages/Login";
+import { About } from "./pages/About";
 import { NotFound } from "./pages/NotFound";
 import { Home } from "./pages/Home";
 import { Register } from "./pages/Register";
@@ -17,6 +18,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/search" element={<Search />} />
           <Route path="/postad" element={<Postad />} />
+          <Route path="/about" element={<About />} />
           <Route path="/404" element={<NotFound />} />
           <Route path="*" element={<Navigate to="404" replace />} />
         </Routes>

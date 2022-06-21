@@ -1,5 +1,4 @@
-// import { useContext, useState } from "react";
-// import { useNavigate, Navigate } from "react-router-dom";
+import { Menu } from "../components/Menu";
 import { Footer } from "../components/Footer";
 import "./Postad.css";
 import logo from "../img/logo.svg";
@@ -9,8 +8,8 @@ export const Postad = () => {
 
   return (
 
-    <section>
-      <a href="http://localhost:3000/"><img className="logo" src={logo} alt="logo" /></a>
+    <section className="postad">
+      <Menu />
       <div className="postbox">
       
       <h1>Post your add</h1>
