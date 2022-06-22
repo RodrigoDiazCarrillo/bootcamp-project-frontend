@@ -20,9 +20,6 @@
   background:url("../img/logo-small.svg");
   background-size: cover;
 }
-.menu .logo {
- margin-left: 1rem;
-}
 
 .menu .loginbtn,
 .dropbtn {

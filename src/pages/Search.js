@@ -8,23 +8,18 @@ export const Search = () => {
   const [ads, setAds] = useState("");
 
   useEffect(() => {
-    
-      setIsLoading(true);
-   
-      fetch("http://127.0.0.1:8000/ad",{
-      method: 'GET' })
+    setIsLoading(true);
+
+    fetch("http://127.0.0.1:8000/ad", {
+      method: "GET",
+    })
       .then((response) => response.json())
       .then((data) => {
         setAds(data);
         console.log(data);
-       
         setIsLoading(false);
-       
       });
-      
-    
-  },
-  []);
+  }, []);
 
   if (isLoading) {
     return (
@@ -34,35 +29,40 @@ export const Search = () => {
     );
   }
 
-
   return (
-    <section className="srch" >
+    <section className="srch">
       <Menu />
       <div className="srchheader">
-      <div className="srchselect">
-        <p>Category</p>
-      <select>
+        <p className="srchtitle">
+          Find maintenance and <u>repair services</u> for your home
+        </p>
+        <div className="srchselect">
+          <p>Category</p>
+          <select>
             <option>Electricity</option>
             <option>Painting</option>
             <option>Technician</option>
             <option>Plumbing</option>
             <option>Brickwork</option>
             <option>Metalwork</option>
-            <option>Internet & lan</option>
+            <option>Internet &amp; lan</option>
             <option>Woodwork</option>
-      </select>
-      </div>  
-      <p className="srchtitle">Find maintenance and <u>repair services</u> for your home</p>
+          </select>
+        </div>
       </div>
-      <hr></hr>
 
-    
-         { console.log(ads[1])}
-         
-        
+      {/* {ads && ads[1].category} */}
 
-      <Footer/>
+      {Object.keys(ads).map(function (key) {
+        return (<div className="card">
+          <div>{ads[key].title}</div> 
+          <div>{ads[key].image}</div> 
+          <div>{ads[key].category}</div>
+          <div>{ads[key].description}</div> 
+        </div>)
+      })}
+
+      <Footer />
     </section>
-
   );
 };

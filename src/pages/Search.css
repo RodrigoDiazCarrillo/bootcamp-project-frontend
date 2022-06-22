@@ -1,12 +1,20 @@
+.srch .card{
+    background-color: chocolate;
+    width: 20%;
+    border: solid 1px black;
+    overflow: hidden;
+}
+
 .srch{
     background-color: rgb(7,155,213);
 }
 .srchheader{
     display: flex;
+    flex-direction: column;
 }
 .srchtitle{
     color: rgb(255, 255, 255);
-    font-size: 1.785rem;
+    font-size: 1rem;
     font-weight: 700;
     width: 100%;
     display: flex;
@@ -17,13 +25,17 @@
     color: rgb(237, 108, 22);
 }
 .srchselect{
-    width: 12%;
+    width: 100%;
     padding: 1rem;
-    margin-left: 1rem;
+    margin-left: 3rem;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+
 }
 .srchselect>p{
     color:white;
-    font-size: 1.2rem;
+    font-size: .8rem;
 }
 form div{
     display: flex;
@@ -32,11 +44,13 @@ form div{
 }
 select{
     border-radius: 0px;
+    height: 2rem;
     background-color: rgb(7,155,213);
     color: white;
     border: 0px;
+    margin-left: 1rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.2rem;
+    font-size: .8rem;
     border: solid 2px rgb(237, 108, 22);
 }
 select:focus{
@@ -44,7 +58,7 @@ select:focus{
     background-color: rgb(7,155,213);
     border: solid 2px rgb(237, 108, 22);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.2rem;
+    font-size: .8rem;
     outline: none;
 }
 select:hover{
@@ -53,7 +67,7 @@ select:hover{
     border: solid 2px rgb(255, 173, 118);
     cursor:pointer;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.2rem;
+    font-size: .8rem;
     outline: none;
 }
 hr{
