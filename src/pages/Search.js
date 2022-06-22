@@ -50,9 +50,7 @@ export const Search = () => {
           </select>
         </div>
       </div>
-
-      {/* {ads && ads[1].category} */}
-
+      <div className="cards">
       {Object.keys(ads).map(function (key) {
         return (<div className="card">
           <div>{ads[key].title}</div> 
@@ -61,7 +59,7 @@ export const Search = () => {
           <div>{ads[key].description}</div> 
         </div>)
       })}
-
+      </div>
       <Footer />
     </section>
   );

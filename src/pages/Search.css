@@ -1,8 +1,13 @@
-.srch .card{
+.cards .card{
     background-color: chocolate;
-    width: 20%;
+    width: 30%;
     border: solid 1px black;
     overflow: hidden;
+    margin-bottom: 1rem;
+}
+.srch .cards{
+    display: flex;
+    justify-content: space-around;
 }
 
 .srch{
