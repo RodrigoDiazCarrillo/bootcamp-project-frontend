@@ -54,6 +54,7 @@ export const Login = () => {
       <div className="button-container">
         <input type="submit" name="Sign Up" />
       </div>
+      <a href="http://localhost:3000/register" ><div className="register" >you are not registered?</div></a>
     </form>
     </div>
   );

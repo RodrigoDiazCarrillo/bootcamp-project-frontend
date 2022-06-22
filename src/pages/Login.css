@@ -3,7 +3,8 @@
     margin: 30vh auto;
     background-color: #f8f9fd;
     width: 20%;
-    border: solid 1px rgb(237, 108, 22);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: solid 2px rgb(237, 108, 22);
   }
   .login .logged{
     padding: 2rem;
@@ -12,6 +13,17 @@
     background-color: #f8f9fd;
     width: 20%;
     border: solid 1px rgb(237, 108, 22);
+}
+.loginform a{
+  display: flex;
+  text-decoration: none;
+  color: black;
+  cursor:alias;
+}
+.loginform .register{
+  width:80%;
+  cursor: pointer;
+  margin: 1rem auto;
 }
   .loginform .title{
       font-weight: bold;
@@ -33,12 +45,13 @@
     margin-top: 1rem ;
     font-size: 1rem;
     background: rgb(237, 108, 22);
+    border: 0px;
     color: #fff;
     padding: 10px 20px;
   }
   
   .loginform input[type="submit"]:hover {
-    background: #6cf0c2;
+    background: rgb(7,155,213);
   }
   
   .loginform .button-container {
