@@ -1,3 +1,5 @@
+
+
 #footer{
     display: flex;
     font-size: 1rem;
@@ -18,9 +20,10 @@
     width: 100%;
 }
 
-#footer a, p{
+#footer a, #footer p{
     font-size: .8rem;
     color: white;
+    margin: .8rem;
     text-decoration: none;
 }
 #footer a:hover{
@@ -28,12 +31,22 @@
     text-decoration: none;
     cursor: pointer;
 }
+#footer .social{
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#footer .social>a{
+    font-size: 1.5rem;
+}
+
 /* small */
 @media only screen and (min-width:576px) {
 }
 /* medium */
 @media only screen and (min-width:768px) {
-    #footer a, p {
+    #footer a, #footer p {
         font-size: 1rem;
         color: white;
         text-decoration: none;

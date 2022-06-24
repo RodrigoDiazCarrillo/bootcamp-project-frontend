@@ -1,22 +1,25 @@
 import logo from "../img/logo.svg";
 import "./Footer.css";
-import { BsFillSuitHeartFill} from "react-icons/bs";
-import { BiMap,BiPhone,BiMailSend } from "react-icons/bi";
+import { BsFillSuitHeartFill, BsFacebook,BsInstagram,BsTwitter } from "react-icons/bs";
+import { BiMap,BiPhone,BiMailSend} from "react-icons/bi";
+
 
 export const Footer = () => {
     const boxstyle = { color: "red"}
   return (
-    <section id="footer">
+    <section id="footer">  
       <div className="imgfooter">
-        <img className="logo" src={logo} alt="logo" />
+        <img id="logofooter" src={logo} alt="logo" />
         <p>Made with <BsFillSuitHeartFill style={boxstyle}/>  by Rodrigo Díaz</p>
       </div>
       <div>
           <p><strong>HomeFIX</strong></p>
-          <a>&nbsp;</a>
-          <a>About us</a>
-          <a>&nbsp;</a>
-          <a>How does it work</a>
+          <a href="http://localhost:3000/about">About us</a>
+          <div className="social">
+            <a href="https://www.facebook.com/" target="_blank"><BsFacebook/></a>
+            <a href="https://www.instagram.com/accounts/login/" target="_blank"><BsInstagram/></a>
+            <a href="https://twitter.com/i/flow/login" target="_blank"><BsTwitter/></a>
+          </div>
       </div>
       <div>
           <p><strong>Contact info</strong></p>
@@ -26,14 +29,11 @@ export const Footer = () => {
       </div>
       <div>
           <p><strong>About</strong></p>
-          <a>&nbsp;</a>
-          <a>Sitemap</a>
-          <a>&nbsp;</a>
-          <a>Privacy Policies</a>
-          <a>&nbsp;</a>
-          <a>Terms and Conditions</a>
-          <a></a>
+          <a href="http://localhost:3000">Sitemap</a>
+          <a href="http://localhost:3000">Privacy Policies</a>
+          <a href="http://localhost:3000">Terms and Conditions</a>
+   
       </div>
-    </section>
+    </section> 
   );
 };

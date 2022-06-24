@@ -7,6 +7,10 @@ import { AuthContext } from "../components/AuthContext";
 export const Login = () => {
   const [user, setUser] = useState({ email: "", password: "" });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const { role, setRole } = useContext(AuthContext);
+  const { email, setEmail } = useContext(AuthContext);
+  const { fname, setFname } = useContext(AuthContext);
+  const { lname, setLname } = useContext(AuthContext);
   const { token, setToken } = useContext(AuthContext);
   const { rtoken, setRtoken } = useContext(AuthContext);
 
@@ -25,6 +29,10 @@ export const Login = () => {
         if (data !== "Incorrect username or password") {
           setToken(data.token);
           setRtoken(data.refresh_token);
+          setRole(data.role);
+          setEmail(data.email);
+          setFname(data.first_name);
+          setLname(data.last_name);
           setIsSubmitted(true);
         }
       });
@@ -61,8 +69,7 @@ export const Login = () => {
 
   return (
     <section className="login">
-   
-        {/* {isSubmitted ? <div className="logged">User is successfully logged in</div> : renderForm}  */}
+
         {isSubmitted ? <Navigate to="/" replace /> : renderForm} 
       <Footer />
     </section>

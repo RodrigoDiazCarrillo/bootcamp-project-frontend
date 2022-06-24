@@ -6,6 +6,7 @@ import { Home } from "./pages/Home";
 import { Register } from "./pages/Register";
 import { Search } from "./pages/Search";
 import { Postad } from "./pages/Postad";
+import { User } from "./pages/User";
 import "./App.css";
 
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/search" element={<Search />} />
           <Route path="/postad" element={<Postad />} />
           <Route path="/about" element={<About />} />
+          <Route path="/user" element={<User />} />
           <Route path="/404" element={<NotFound />} />
           <Route path="*" element={<Navigate to="404" replace />} />
         </Routes>
