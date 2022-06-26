@@ -16,7 +16,7 @@
 .menu .logo{
   height: 6rem;
   width: 6.5rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
   background:url("../img/logo-small.svg");
   background-size: cover;
 }

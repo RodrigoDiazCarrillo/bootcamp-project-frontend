@@ -4,6 +4,7 @@ import { Menu } from "../components/Menu";
 import { Footer } from "../components/Footer";
 import { Workcards } from "../components/Workcards";
 import { CgToolbox } from "react-icons/cg";
+import { Carousel, Titleslide } from "../components/Carousel";
 
 
 export const Home = () => {
@@ -14,7 +15,9 @@ export const Home = () => {
   return (
     <section className="home" >
       <Menu />
-      <p>Find maintenance and <u>repair services</u> for your home</p>
+    <Titleslide/>
+      <Carousel/>
+      <p>Search <u>ads</u></p>
       <Workcards/>
       <section className="post-ad">
           <h2>Post an ad</h2>         

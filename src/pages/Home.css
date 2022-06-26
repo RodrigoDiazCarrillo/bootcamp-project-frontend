@@ -3,21 +3,17 @@
     background-color: rgb(7,155,213);
     background-size: cover;
 }
-.home>p{
-    margin: 4rem auto;
-    width: 80%;
-    color: rgb(255, 255, 255);
-    font-size: 1.785rem;
-    font-weight: 700;
-    text-align: center;
-}
-
-.home>p>u{
-    color: rgb(0, 0, 0);
-}
- .home .box1{
+ .home>.box1{
     display: flex;
     justify-content: space-around;
+}
+.home>p{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.home>u{
+    color: rgb(0, 0, 0);
 }
 .home .encuentra, .home .busca{
     margin-top: 10%;
@@ -71,10 +67,10 @@
     border-radius: 8px;
 }
 
-.box1{
+.home>.box1{
     margin-top: 6rem;
 }
-.box1>div{
+.home>.box1>div{
     background: url("../img/hm_vector.svg");  
     width: 100vw;
     height: 60vw;
@@ -83,7 +79,7 @@
     flex-direction: column;
     justify-content: center;
 }
-.box1>div>p{
+.home>.box1>div>p{
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
     width: 40%;
@@ -106,7 +102,7 @@
         margin: 4em auto;
         line-height: 2em;
     }
-    .box1>div>p{
+    .home  .box1>div>p{
         font-size: 2rem;
         color: rgb(255, 255, 255);
         width: 40%;

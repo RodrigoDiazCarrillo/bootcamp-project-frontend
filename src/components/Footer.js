@@ -12,7 +12,19 @@ export const Footer = () => {
         <img id="logofooter" src={logo} alt="logo" />
         <p>Made with <BsFillSuitHeartFill style={boxstyle}/>  by Rodrigo Díaz</p>
       </div>
-      <div>
+      <div className="box0">
+        <div>
+      <img id="logofooter" src={logo} alt="logo" />
+        
+        <div className="social">
+            <a href="https://www.facebook.com/" target="_blank"><BsFacebook/></a>
+            <a href="https://www.instagram.com/accounts/login/" target="_blank"><BsInstagram/></a>
+            <a href="https://twitter.com/i/flow/login" target="_blank"><BsTwitter/></a>
+          </div>
+          </div>
+          <p>Made with <BsFillSuitHeartFill style={boxstyle}/>  by Rodrigo Díaz</p>
+      </div>
+      <div className="box1">
           <p><strong>HomeFIX</strong></p>
           <a href="http://localhost:3000/about">About us</a>
           <div className="social">
@@ -21,13 +33,13 @@ export const Footer = () => {
             <a href="https://twitter.com/i/flow/login" target="_blank"><BsTwitter/></a>
           </div>
       </div>
-      <div>
+      <div className="box2">
           <p><strong>Contact info</strong></p>
           <p><BiMap/>&nbsp;HomeFIX,<br/>  801 Blairyhill Rd., Suite 000, Charlotte,<br/>  NC 28207, U.S.A.</p>
           <p><BiPhone/>&nbsp;900 000 000</p>
           <a href="mailto:info@homefix.com"><BiMailSend/>&nbsp;info@homefix.com</a>
       </div>
-      <div>
+      <div className="box3">
           <p><strong>About</strong></p>
           <a href="http://localhost:3000">Sitemap</a>
           <a href="http://localhost:3000">Privacy Policies</a>

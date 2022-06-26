@@ -100,7 +100,8 @@
     margin-top: 2rem;
 }
 .stlTitle{
-    color: rgb(237, 108, 22);
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 1px 3px rgb(100, 100, 100);
     font-size: 1.8rem;
     font-weight:700;
 }
