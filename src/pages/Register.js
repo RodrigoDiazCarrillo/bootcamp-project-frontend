@@ -36,7 +36,7 @@ export const Register = () => {
     <a href="http://localhost:3000/" ><div className="logo"></div></a>
       <div className="title">Sign In</div>
       <div className="input-container">
-        <h2>Email</h2>
+        <p>Email</p>
         <input
           type="email"
           name="useremail"

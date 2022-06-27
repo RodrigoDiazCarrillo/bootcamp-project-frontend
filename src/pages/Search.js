@@ -66,7 +66,7 @@ export const Search = () => {
               <label for="radio-six">Metalwork</label>
               <input type="radio" id="radio-seven" name="radio-categories" value="Internet"/>
               <label for="radio-seven">Internet </label>
-              <input type="radio" id="radio-eight" name="radio-categories" value="Woodwork"/>
+              <input type="radio" id="radio-eight" name="radio-categories" value="Woodwork0."/>
               <label for="radio-eight">Woodwork</label>
             </div>
           </form>
