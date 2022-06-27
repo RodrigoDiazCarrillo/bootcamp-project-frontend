@@ -11,12 +11,13 @@
     margin: 2rem auto;
 }
 .about h2{
+    color: white;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 1rem;
 }
-.about strong{
-    color: rgb(237, 108, 22);
+.about u{
+    color: black;
 }
 .about .tower{
     margin-top: rem;

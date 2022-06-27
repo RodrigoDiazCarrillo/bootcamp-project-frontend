@@ -13,7 +13,7 @@ export const About = () => {
       
 
       <a id="aboutlogo" href="http://localhost:3000/"><img className="logo" src={logo} alt="logo" /></a>
-        <h2>Homefix is ​​the community that makes your life <strong>easier</strong></h2>
+        <h2>Homefix is ​​the community that makes your life <u>easier</u></h2>
 
         <div className="tower"></div>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -21,7 +21,7 @@ export const About = () => {
           Nullam dignissim congue lectus non luctus. Nam nec elit consequat 
           </p>
 
-        <h2>We help you find <strong>professionals</strong> in your city</h2>
+        <h2>We help you find <u>professionals</u> in your city</h2>
            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Sed dolor nisl, placerat vel quam ac, luctus blandit leo. 
           Nullam dignissim congue lectus non luctus. Nam nec elit consequat 

@@ -41,63 +41,26 @@
 }
 .srchtitle{
     color: rgb(255, 255, 255);
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 1.8rem;
+    font-weight: 600;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .srchtitle>u{
-    color: rgb(237, 108, 22);
+    color: black;
 }
 .srchselect{
     width: 100%;
-    padding: 1rem;
-    margin-left: 3rem;
     display: flex;
-    justify-content:flex-start;
+    flex-direction: column;
     align-items: center;
 
 }
-.srchselect>p{
-    color:white;
-    font-size: .8rem;
-}
+
 form div{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.srch select{
-    border-radius: 0px;
-    height: 2rem;
-    background-color: rgb(7,155,213);
-    color: white;
-    border: 0px;
-    margin-left: 1rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    font-size: .8rem;
-    border: solid 2px rgb(237, 108, 22);
-}
-select:focus{
-    border-radius: 0px;
-    background-color: rgb(7,155,213);
-    border: solid 2px rgb(237, 108, 22);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    font-size: .8rem;
-    outline: none;
-}
-select:hover{
-    border-radius: 0px;
-    background-color: rgb(7,155,213);
-    border: solid 2px rgb(255, 173, 118);
-    cursor:pointer;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    font-size: .8rem;
-    outline: none;
-}
- 
 
 .lds-roller {
     display: inline-block;
@@ -182,4 +145,39 @@ select:hover{
     100% {
       transform: rotate(360deg);
     }
+  }
+  /* ************************************** */
+  .switch-field {
+    display: flex;
+    padding: 0.2rem;
+    margin-bottom: 36px;
+    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .switch-field input {  
+    height: 1px;
+    width: 1px;
+    border: 0;
+  }
+  
+  .switch-field label {
+    margin-top: 0.5rem;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    padding: .5rem 1rem;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+    transition: all 0.1s ease-in-out;
+  }
+  .switch-field>label:hover {
+    cursor: pointer;
+  }
+  .switch-field>input:checked + label {
+    background-color: #a5dc86;
+    box-shadow: none;
   }

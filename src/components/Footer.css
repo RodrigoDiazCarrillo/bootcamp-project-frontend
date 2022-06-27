@@ -21,7 +21,6 @@
 #footer a, #footer p{
     font-size: .8rem;
     color: white;
-    margin-top: 2rem;
     text-decoration: none;
 }
 #footer a:hover{
@@ -51,6 +50,23 @@
 }
 /* small */
 @media only screen and (min-width:576px) {
+    #footer .box0{
+    display: none;
+    }
+    #footer .imgfooter, #footer .box1, #footer .box2, #footer .box3{
+        display:inline;
+        margin-bottom: 2rem;
+    }
+    #footer img {
+        width: 80%;
+    }
+    #footer .social {
+        width: 60%;
+        height: 1.5rem;
+        display: flex;
+        margin: 1rem auto;
+        justify-content: space-between;
+    }
 }
 /* medium */
 @media only screen and (min-width:768px) {

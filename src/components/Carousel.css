@@ -58,12 +58,12 @@ html, body {
     position: relative;
     width: 100vw;
     height: 3rem;
-    margin: 2rem auto 3rem;
+    margin: 2rem auto 4rem;
   }
   
   .titleslider p {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
     width: 80%;
     position: absolute;
@@ -75,7 +75,6 @@ html, body {
   .titleslider u{
     color: black;
   }
-  
   p:nth-child(2) {
     animation-delay: 4s;
   }
@@ -84,24 +83,10 @@ html, body {
   }
  
   @keyframes titledisplay {
-    0% {
-      transform: translateX(200px);
-      opacity: 0;
-    }
-    10% {
-      transform: translateX(0);
+    0%{
       opacity: 1;
     }
-    20% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    30% {
-      transform: translateX(-200px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(-200px);
+    50% {
       opacity: 0;
     }
   }

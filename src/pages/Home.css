@@ -3,16 +3,17 @@
     background-color: rgb(7,155,213);
     background-size: cover;
 }
+
  .home>.box1{
     display: flex;
     justify-content: space-around;
 }
 .home>p{
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 600;
 }
-.home>u{
+.home u{
     color: rgb(0, 0, 0);
 }
 .home .encuentra, .home .busca{
@@ -31,16 +32,16 @@
 }
 .post-ad{
     border-radius: 0.5rem;
-    width: 50%;
-    margin: 2em auto;
+    width: 70%;
+    margin: 2em auto 35%;
     padding: 1rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    background-color: rgb(20, 83, 137);
+    background-color: rgb(95 95 95 / 30%);
 }
 .post-ad>h2{
-    color: rgb(237, 108, 22);
+    color: rgb(255, 255, 255);
     font-size: 2.3rem;
     font-weight: 700;
     text-align: center;
@@ -48,10 +49,10 @@
 .post-ad>p{
     color: rgb(255, 255, 255);
     width: 80%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
-    margin: 2em auto;
+    margin: 1em auto;
     line-height: 2em;
 }
 .post-ad>a{
@@ -66,7 +67,35 @@
     border: solid 1px white;
     border-radius: 8px;
 }
-
+.boxicon{
+    color:rgb(255, 255, 255);
+    width: 2em;
+    margin: 0 auto 0 .5rem;
+}
+.boxicon:hover{
+    color: rgb(237, 108, 22);
+}
+.handicon{
+    color: black;
+    animation: handanimation 2s infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 1.2rem;
+}
+@keyframes handanimation{
+    30% {
+        transform: translateY(15px);
+      }
+    50% {
+      transform: translateY(0px);
+    }
+    80% {
+        transform: translateY(15px);
+      }
+  }
+.post-ad .icons{
+    width: 20%;
+    margin: 2rem auto;
+}
 .home>.box1{
     margin-top: 6rem;
 }
@@ -77,16 +106,14 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 .home>.box1>div>p{
-    font-size: 1.5rem;
+    margin-top: -1rem;
+    font-size: 1.2rem;
     color: rgb(255, 255, 255);
-    width: 40%;
-    margin: 0 auto;
     box-sizing: border-box;
     padding: 0.5rem 0 0.5rem 0;
-    background-color: rgba(237, 108, 22,0.5);
+    background-color: rgb(95 95 95 / 30%);
 }
 /* small */
 @media only screen and (min-width:576px) {
@@ -103,19 +130,33 @@
         line-height: 2em;
     }
     .home  .box1>div>p{
-        font-size: 2rem;
+        font-size: 1.8rem;
         color: rgb(255, 255, 255);
-        width: 40%;
+        width: 100%;
         margin: 0 auto;
         box-sizing: border-box;
         padding: 2rem 0 2remrem 0;
-        background-color: rgba(237, 108, 22,0.5);
+        background-color: rgb(95 95 95 / 30%);
+    }
+    .boxicon{
+        font-size: 3rem;
+    }
+    .handicon{
+        font-size: 3rem;
+    }
+    .post-ad{
+        width: 60%;
     }
 }
  /* largue */
 @media only screen and (min-width:992px) {
-
+    .post-ad{
+        width: 50%;
+    }
 }
  /* Extra largue */
 @media only screen and (min-width:1200px) {
+    .post-ad{
+        width: 40%;
+    }
 }

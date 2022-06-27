@@ -2,7 +2,7 @@
     border-radius: 1rem;
     margin: 30vh auto;
     background-color: #f8f9fd;
-    width: 30%;
+    width: 70%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: solid 2px rgb(237, 108, 22);
   }
@@ -104,4 +104,28 @@
     background:url("../img/logo-small.svg");
     background-size: cover;
   }
-  
+  /* small */
+@media only screen and (min-width:576px) {
+  .ad .postbox {
+    width: 60%;
+  }
+}
+/* medium */
+@media only screen and (min-width:768px) {
+  .ad .postbox {
+    width: 45%;
+  }
+}
+ /* largue */
+@media only screen and (min-width:992px) {
+  .ad .postbox {
+    width: 35%;
+  }
+
+}
+ /* Extra largue */
+@media only screen and (min-width:1200px) {
+  .ad .postbox {
+    width: 30%;
+  }
+}
