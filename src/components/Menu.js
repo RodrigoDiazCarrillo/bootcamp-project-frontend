@@ -9,6 +9,18 @@ export const Menu = () => {
   let menustyle = { color: "white", fontSize: "2em" }
   let checkicon = { color: "green", fontSize: "1.5em" }
   let xicon = { color: "red", fontSize: "1.5em" }
+  
+  function sayHello() {
+    return(
+    <div className="logged">Successfully logged in!
+                <button
+                  onClick={(e) => 
+                    {window.location.href = "http://localhost:3000/";}}
+                  >OK
+                </button>
+                </div>
+    )
+  }
     return (
       <section className="menu">
        <a href="http://localhost:3000/" className="logo"><div></div></a>
@@ -18,10 +30,18 @@ export const Menu = () => {
           {token ? <FiUserCheck style={checkicon}/> : <FiUserX style={xicon}/>}
               </div>
         {token ? <button
-          onClick={(e) => {localStorage.clear();window.location.href = "http://localhost:3000/"; }}
+          onClick={(e) => {
+            e.preventDefault();
+            alert("Successfully logged out");
+            localStorage.clear();
+            window.location.href = "http://localhost:3000"; 
+          }}
           className="loginbtn">LOG OUT
-        </button> :
-        <button onClick={(e) => {e.preventDefault();window.location.href = "http://localhost:3000/login"; }}
+        </button> : 
+        <button onClick={(e) => {
+          e.preventDefault();
+          window.location.href = "http://localhost:3000/login"; 
+        }}
         className="loginbtn">LOG IN
       </button>
       }

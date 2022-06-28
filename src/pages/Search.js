@@ -36,6 +36,8 @@ export const Search = () => {
             <div className="category">{ads[key].category}</div>
             <div className="title">{ads[key].title}</div>
             <div className="description">{ads[key].description}</div>
+            <button className="contactbtn" onClick={() => window.location = `mailto:${ads[key].temail}`}>
+              <span >Contact Me</span></button>
           </div>
         );
       })}

@@ -25,7 +25,6 @@ export const Login = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         if (data !== "Incorrect username or password") {
           setToken(data.token);
           setRtoken(data.refresh_token);
@@ -41,7 +40,7 @@ export const Login = () => {
  
   const renderForm = (
     
-    <div className="loginform">
+    <div className="loginform" >
     <form onSubmit={submit}>
     <a href="http://localhost:3000/" ><div className="logo"></div></a>
       <div className="title">Sign In</div>
@@ -54,7 +53,8 @@ export const Login = () => {
       </div>
       <div className="input-container">
         <input
-          type="text"
+        autoComplete="off"
+          type="password"
           name="userpassword"
           onChange={(e) => setUser({ ...user, password: e.target.value })}
         />
@@ -69,8 +69,13 @@ export const Login = () => {
 
   return (
     <section className="login">
-
-        {isSubmitted ? <Navigate to="/" replace /> : renderForm} 
+ {isSubmitted ? <div className="logged">Successfully logged in!
+        <button
+          onClick={(e) => 
+            {window.location.href = "http://localhost:3000/";}}
+          >OK
+        </button>
+        </div> : renderForm} 
       <Footer />
     </section>
   );

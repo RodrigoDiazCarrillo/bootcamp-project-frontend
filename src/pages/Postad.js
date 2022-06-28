@@ -94,7 +94,13 @@ export const Postad = () => {
   return (
     <section className="ad">
    
-        {isSubmitted ? <div className="registered">User is successfully registered</div> : renderForm} 
+        {isSubmitted ? <div className="registered">Submitted!
+        <button
+          onClick={(e) => 
+            {window.location.href = "http://localhost:3000/";}}
+          >OK
+        </button>
+        </div> : renderForm} 
 
       <Footer />
     </section>

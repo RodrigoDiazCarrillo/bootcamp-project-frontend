@@ -1,9 +1,10 @@
 .cards .card{
     background-color: white;
     border-radius: .5rem;
-    width: 25%;
+    width: 70%;
+    height: 100%;
     overflow: hidden;
-    margin-bottom: 1rem;
+    margin: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .card .title{
@@ -23,13 +24,56 @@
 }
 .card .image{
   width: 100%;
-  height: 8rem;
+  height: 50vw;
   background: url("../img/card_bg.jpg"); 
   background-size: cover;
 }
+
+.card .contactbtn{
+    border-radius: 4px;
+    background-color: #ffffff;
+    color:rgb(237, 108, 22);
+    border: solid 1px rgb(237, 108, 22);
+    text-align: center;
+    font-size: .8rem;
+    padding: .5rem 1rem;
+    transition: all .5s;
+    cursor: pointer;
+    margin: 1rem;
+  }
+  
+  .card .contactbtn span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  } 
+  .card .contactbtn span:after {
+    content: '\00bb';
+    vertical-align: middle;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .card .contactbtn:hover span {
+    padding-right: .7rem;
+    color: rgb(255, 255, 255);
+  } 
+  .card .contactbtn:hover{
+    background-color: rgb(7,155,213);
+    border: solid 1px rgb(7,155,213);
+  } 
+  .card .contactbtn:hover span:after {
+    color: #ffffff;
+    opacity: 1;
+    right: 0;
+  }
 .srch .cards{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .srch{
@@ -146,7 +190,7 @@ form div{
       transform: rotate(360deg);
     }
   }
-  /* ************************************** */
+  /* Search filters */
   .switch-field {
     display: flex;
     padding: 0.2rem;
@@ -181,3 +225,30 @@ form div{
     background-color: #a5dc86;
     box-shadow: none;
   }
+ /* small */
+ @media only screen and (min-width:576px) {
+
+}
+/* medium */
+@media only screen and (min-width:768px) {
+  .cards .card{
+    width: 45%;
+}
+.card .image {
+  width: 100%;
+  height: 15rem;
+}
+}
+ /* largue */
+@media only screen and (min-width:992px) {
+  .cards .card{
+    width: 30%;
+}
+
+}
+ /* Extra largue */
+@media only screen and (min-width:1200px) {
+  .cards .card{
+    width: 22%;
+}
+}
