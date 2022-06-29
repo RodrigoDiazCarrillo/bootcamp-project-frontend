@@ -5,44 +5,51 @@ import { useEffect, useState, useContext } from "react";
 import { AuthContext } from "../components/AuthContext";
 
 export const Search = () => {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [ads, setAds] = useState("");
   const token = useContext(AuthContext);
+  const filters =[];
+  
   useEffect(() => {
-    setIsLoading(true);
-
+    console.log(token);
     fetch("http://127.0.0.1:8000/ad", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${token.token}`,
       },
     })
       .then((response) => response.json())
       .then((data) => {
-        setAds(data);
-        console.log(data);
-        setIsLoading(false);
+          setAds(data);
+          console.log(data);    
+          setIsLoading(false);
       });
-  }, []);
-
+  }, [isLoading]);
   //Cards structure
   const rendercards = (
     <div className="cards">
-      {Object.keys(ads).map(function (key) {
+
+      {!isLoading && ads.map(function (ad,index) {
+        //console.log(filters.find(element => element === ad.category))
         return (
-          <div className="card">
+          <div className="card" key={index}>
             <div className="image"></div>
-            <div className="category">{ads[key].category}</div>
-            <div className="title">{ads[key].title}</div>
-            <div className="description">{ads[key].description}</div>
-            <button className="contactbtn" onClick={() => window.location = `mailto:${ads[key].temail}`}>
+            <div className="category">{ad.category}</div>
+            <button className="contactbtn" >
               <span >Contact Me</span></button>
           </div>
+     
         );
       })}
     </div>
   );
+  function handleClick (e){
+    filters.push(e.target.name);
+    console.log(filters);
+    const found = filters.find(element => element === e.target.name);  
+    console.log("found:"+found);
+  }
 
   return (
     <section className="srch">
@@ -51,28 +58,16 @@ export const Search = () => {
         <p className="srchtitle">
           Find maintenance and <u>repair services</u> for your home
         </p>
-        <div className="srchselect">
-          <form class="form">
-            <div class="switch-field">
-              <input type="radio" id="radio-one" name="radio-categories" value="Electricity"/>
-              <label for="radio-one">Electricity</label>
-              <input type="radio" id="radio-two" name="radio-categories" value="Painting"/>
-              <label for="radio-two">Painting</label>
-              <input type="radio" id="radio-three" name="radio-categories" value="Technician"/>
-              <label for="radio-three">Technician</label>
-              <input type="radio" id="radio-four" name="radio-categories" value="Plumbing"/>
-              <label for="radio-four">Plumbing</label>
-              <input type="radio" id="radio-five" name="radio-categories" value="Brickwork"/>
-              <label for="radio-five">Brickwork</label>
-              <input type="radio" id="radio-six" name="radio-categories" value="Metalwork"/>
-              <label for="radio-six">Metalwork</label>
-              <input type="radio" id="radio-seven" name="radio-categories" value="Internet"/>
-              <label for="radio-seven">Internet </label>
-              <input type="radio" id="radio-eight" name="radio-categories" value="Woodwork0."/>
-              <label for="radio-eight">Woodwork</label>
-            </div>
-          </form>
-        </div>
+      <div className="categories">
+        <button name="Electricity" onClick={handleClick}>Electricity</button>
+        <button name="Painting" onClick={handleClick}>Painting</button>
+        <button name="Technician" onClick={handleClick}>Technician</button>
+        <button name="Plumbing" onClick={handleClick}>Plumbing</button>
+        <button name="Brickwork" onClick={handleClick}>Brickwork</button>
+        <button name="Metalwork" onClick={handleClick}>Metalwork</button>
+        <button name="Internet" onClick={handleClick}>Internet</button>
+        <button name="Woodwork" onClick={handleClick}>Woodwork</button>
+      </div> 
       </div>
       {isLoading ? (
         <div className="lds-roller">

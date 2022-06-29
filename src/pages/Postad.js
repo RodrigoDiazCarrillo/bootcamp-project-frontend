@@ -81,7 +81,7 @@ export const Postad = () => {
           type="file"
           name="image"
           required="required"
-          onChange={(e) => setAd({ ...ad, image:"image"})}
+          onChange={(e) => setAd({ ...ad, image:e.target.files[0]})}
         />
       </div>
       <div className="button-container">
