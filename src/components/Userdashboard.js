@@ -1,54 +1,37 @@
-import { Footer } from "../components/Footer";
-import { Menu } from "../components/Menu";
 import {useContext, useEffect,useState } from "react";
-import { AuthContext } from "../components/AuthContext";
+import { AuthContext } from "./AuthContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBan, faPen} from '@fortawesome/free-solid-svg-icons'
-import "./Dashboard.css";
+import "./Userdashboard.css";
 
 
 
-export const Dashboard = () => {
+export const Userdashboard = () => {
     const [edit, setEdit] = useState();
-    const { token,fname,lname,role,email } = useContext(AuthContext);
+    const { token,fname,lname,role,email,id } = useContext(AuthContext);
     const [isLoading, setIsLoading] = useState(true);
-    const [users, setUsers] = useState("");
+    const [myuser, setMyuser] = useState("");
 
-    useEffect(() => {
-      fetch("http://127.0.0.1:8000/members", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-      })
-        .then((response) => response.json())
-        .then((data) => {
-            setUsers(data);
-            console.log(data); 
-            setIsLoading(false);   
-        });
-    }, [isLoading]);
-    //Delete user
-    function handleDelete (e){
-      fetch(`http://127.0.0.1:8000/members/delete/${e.target.name}`, {
-      method: "DELETE",
-      // headers: {
-      //   "Content-Type": "application/json",
-      //   //Authorization: `Bearer ${token.token}`,
-      // },
-    })
-      .then((response) => response.json())
-      .then((data) => {
+    // useEffect(() => {
+    //   fetch(`http://127.0.0.1:8000/members/getOne/${id}`, {
+    //     method: "GET",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //       Authorization: `Bearer ${token}`,
+    //     },
+    //   })
+    //     .then((response) => response.json())
+    //     .then((data) => {
+    //         setMyuser(data);
+    //         console.log(data); 
+    //         setIsLoading(false);   
+    //     });
+    // }, [isLoading]);
 
-          console.log(data);    
-      });
-      window.location.href = window.location.href;
-    }
     //Update user
     function submit (e){
-      console.log("abc");
-      console.log("name"+e.target.name);
+      e.preventDefault()
+      console.log(edit);
     
       fetch(`http://127.0.0.1:8000/members/update/${e.target.name}`, {
       method: "PATCH",
@@ -68,19 +51,19 @@ export const Dashboard = () => {
     //Dashboard
     return(
 
-        <div className="main-admin">
-        <h2>{fname}</h2>
-        <p>email: {email}</p>
+        <div className="main-user">
+        <h2>My user</h2>
         <div className="users-table">
-        {!isLoading && users.map(function (user,index) { 
-        return (
-          <div className="user-list" key={index}>
-            <p>{user.first_name} {user.last_name}</p>
-            <button className="deletebtn" name={user._id} onClick={handleDelete}>Delete User <i><FontAwesomeIcon icon={faBan}/></i></button>
+
+          <div className="userboard" >
+            <p>First name: {fname}</p>
+            <p>Last name: {lname}</p>
+            <p>Email: {email}</p>
+
             <div class="dropdown">
               <button class="dropbtn">Edit<i><FontAwesomeIcon icon={faPen}/></i></button>
               <div class="dropdown-content">
-                <form name={user._id}  onSubmit={submit}>
+                <form name={id}  onSubmit={submit}>
                     <input
                     autoComplete="off"
                     placeholder="First Name"
@@ -109,27 +92,12 @@ export const Dashboard = () => {
                       name="email"
                       onChange={(e) => setEdit({ ...edit, email: e.target.value })}
                     />
-                     <input
-                    autoComplete="off"
-                    placeholder="Role"
-                      type="text"
-                      name="role"
-                      onChange={(e) => setEdit({ ...edit, role: e.target.value })}
-                    />
                     <button type="submit" class="updatebtn">Update</button>
                   </form>
               </div>
             </div>
           </div>
-      
-        );
-      })}
-      
-      </div>
+      </div> 
         </div>
     )
-   
-    
-
-
 };

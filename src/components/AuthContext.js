@@ -9,6 +9,7 @@ export const AuthProvider = (props) => {
   const [ email, setEmail ] = useState(localStorage.getItem("email"));
   const [ token, setToken] = useState(localStorage.getItem("token"));
   const [ rtoken, setRtoken] = useState(localStorage.getItem("refresh_token"));
+  const [ id, setId] = useState(localStorage.getItem("id"));
 
   useEffect(() => {
     if (token) {
@@ -18,18 +19,21 @@ export const AuthProvider = (props) => {
       localStorage.setItem("email", email);
       localStorage.setItem("token", token);
       localStorage.setItem("refresh_token", rtoken);
+      localStorage.setItem("id", id);
+      setId(id);
     } else {
       localStorage.removeItem("email");
       localStorage.removeItem("role");
       localStorage.removeItem("token");
       localStorage.removeItem("refresh_token");
+      localStorage.removeItem("id");
     }
   }, [token]);
 
   return (
     <AuthContext.Provider value={{ 
       token, setToken, rtoken, setRtoken, role,setRole,email,setEmail,
-      fname,setFname,lname,setLname }}>
+      fname,setFname,lname,setLname,id,setId }}>
       {props.children}
     </AuthContext.Provider>
   );

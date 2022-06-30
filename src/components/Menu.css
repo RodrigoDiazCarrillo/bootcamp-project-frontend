@@ -50,36 +50,66 @@
 .menu .dropdown {
   position: relative;
   display: inline-block;
+
 }
 .menu .dropdown-content {
   display: none;
   position: absolute;
-  right:2rem;
-  border-radius: 8px;
-  background-color: #d8d8d8;
-  min-width: 160px;
+  top:-2rem;
+  left:4rem;
+  background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+}
+.menu .dropdown-content div {
+  margin-top: 20vh;
 }
 
 .menu .dropdown-content a {
   color: black;
-  padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 .menu .dropdown-content a:hover {
   background-color: rgb(237, 108, 22);
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255);
   border-radius: 8px;
 }
-
 .menu .dropdown:hover .dropdown-content {
-  display: block;
-}
+  display:inline;
+  height:100vh;
+  width: 30vw;
+  border-radius: 0;
+  animation: menu .5s forwards;
+  }
+  @keyframes menu {
+      0% {
+        transform: translateX(.1rem);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(-30vw);
+        opacity: 1;
+      }
+    }
 .user-logout{
   color:rgb(100, 100, 100)
+}
+.menu .telephone{
+  margin-right: 3rem;
+  height: 2rem;
+}
+.menu .telephone .number{
+  color: #ff4917; 
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 0;
+}
+.menu .telephone .title{
+  color: #7A7A7A;
+  height: 1rem;
+  margin: 0;
 }
 /* small */
 @media only screen and (min-width:576px) {
@@ -87,8 +117,7 @@
 /* medium */
 @media only screen and (min-width:768px) {
   .menu .logo{
-    height: 6rem;
-    width: 18rem;
+    width: 6rem;
     background:url("../img/logo.svg");
     height: 6rem;
 

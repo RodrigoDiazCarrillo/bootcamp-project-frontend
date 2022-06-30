@@ -1,22 +1,16 @@
 import { Footer } from "../components/Footer";
 import "./Login.css";
 import {useState, useContext } from "react";
-import {Navigate } from "react-router-dom";
 import { AuthContext } from "../components/AuthContext";
 
 export const Login = () => {
   const [user, setUser] = useState({ email: "", password: "" });
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const { role, setRole } = useContext(AuthContext);
-  const { email, setEmail } = useContext(AuthContext);
-  const { fname, setFname } = useContext(AuthContext);
-  const { lname, setLname } = useContext(AuthContext);
-  const { token, setToken } = useContext(AuthContext);
-  const { rtoken, setRtoken } = useContext(AuthContext);
+  const {setId,setRole,setEmail,setFname,setLname,setToken,setRtoken} = useContext(AuthContext);
+
 
   const submit = (e) => {
     e.preventDefault();
-    console.log(user);
 
     fetch("http://127.0.0.1:8000/login", {
       method: "POST",
@@ -32,9 +26,11 @@ export const Login = () => {
           setEmail(data.email);
           setFname(data.first_name);
           setLname(data.last_name);
+          setId(data.id);
           setIsSubmitted(true);
         }
       });
+ 
   };
  
  

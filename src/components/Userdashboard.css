@@ -1,0 +1,95 @@
+.main-user{
+    margin: 20vw;
+}
+.users-table{
+    margin: 0 auto 2rem;
+    width: 50%;
+    border-radius: 8px;
+    background-color: rgb(227, 227, 227);
+  }
+  .userboard{
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .userboard>p{
+      margin: 1rem auto;
+  }
+  .userboard form{
+      padding: 1rem;
+  }
+  .userboard form input{
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: solid 1px;
+    height: 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .userboard button{
+      display: flex;
+      margin-left: 1rem;
+      border-radius: 4px;
+      height: 3rem;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      margin-left: 1rem;
+      padding: 1rem 2rem;
+  }
+  .user-list>p{
+      width: 25%;
+      text-align: initial;
+  }
+  .user-list i{
+      margin-left: 1rem;
+  }
+  .editing{
+      background-color: violet;
+      height: 20rem;
+      width: 20rem;
+  }
+  .userboard .dropbtn {
+      background-color: #04AA6D;
+      margin: 3rem;
+    }
+    .userboard .updatebtn {
+      background-color: #c7ba00;
+      margin: .5rem auto 0;
+    }
+    .userboardt .updatebtn:hover {
+      background-color: #9c9100;
+      color: black;
+    }
+    .userboard .updatebtn:active {
+      transform: scale(0.98);
+      background-color: #776f00;
+    }
+    .userboard .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .userboard .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .userboard .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .userboard .dropdown-content a:hover {background-color: #ddd;}
+    
+    .userboard .dropdown:hover .dropdown-content {display: block;}
+    
+    .userboard .dropdown:hover .dropbtn {background-color: #03764b;}
