@@ -13,7 +13,7 @@ export const About = () => {
       
 
       <a id="aboutlogo" href="http://localhost:3000/"><img className="logo" src={logo} alt="logo" /></a>
-        <h2>Homefix is ​​the community that makes your life <u>easier</u></h2>
+        <h2>Fix_4u is ​​the community that makes your life <u>easier</u></h2>
 
         <div className="tower"></div>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -34,11 +34,11 @@ export const About = () => {
            accumsan. Proin sed ante sit amet nulla porttitor tempus. Aliquam 
            id urna quam.</p>
 
-           <h2>Homefix</h2>
+           <h2>Fix_4u</h2>
           
-          <p>homefix is ​​a registered company:</p>
+          <p>Fix_4u is ​​a registered company:</p>
           <p>owner: John Doe</p>
-          <p>HomeFIX,801 Blairyhill Rd., Suite 000, Charlotte,NC 28207, U.S.A.</p>
+          <p>Fix_4u,801 Blairyhill Rd., Suite 000, Charlotte,NC 28207, U.S.A.</p>
       <Footer/>
     </section>
  

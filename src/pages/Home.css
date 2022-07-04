@@ -1,53 +1,48 @@
 .home{
     height: 100%;
-    background-color: rgb(7,155,213);
+    background-color: rgb(255, 255, 255);
     background-size: cover;
 }
-
- .home>.box1{
-    display: flex;
-    justify-content: space-around;
-}
 .home>p{
-    color: white;
+    color: rgb(79, 93, 115);
     font-size: 1.8rem;
     font-weight: 600;
 }
-.home u{
-    color: rgb(0, 0, 0);
+
+.home .title{
+    position: relative;
+    font-size: 6rem;
+    font-weight: 900;
+    color: #f8f8fa;
+    text-align: left;
 }
-.home .encuentra, .home .busca{
-    margin-top: 10%;
-    display: flex;
-    background-color: rgb(7,155,213);
-    box-shadow: 7px 7px 19px 0px rgba(0,0,0,0.22);
-    border-radius: 8px;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-decoration: none;
-    padding: 1rem;
-    height: 6rem;
-    width: 10rem;
+.home .title .subtitle{
+    color: rgb(79, 93, 115);
+    width: 100%;
+    font-size: 2rem;
+    position: absolute;
+    top: 4rem;
+    margin-left: 2rem;
 }
 .post-ad{
-    border-radius: 0.5rem;
-    width: 70%;
-    margin: 2em auto 35%;
+    width: 100%;
+    height: 20rem;
+    margin: 0 auto 2rem;
     padding: 1rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    background-color: rgb(95 95 95 / 30%);
+    background: url("../img/postad.jpg"); 
+  background-size: cover;
+    position: relative;
 }
-.post-ad>h2{
-    color: rgb(255, 255, 255);
-    font-size: 2.3rem;
-    font-weight: 700;
-    text-align: center;
+.post-ad div{
+  
+  width: 100%;
+  height: 10rem;
 }
 .post-ad>p{
-    color: rgb(255, 255, 255);
+    color: rgb(79, 93, 115);
     width: 80%;
     font-size: 1.5rem;
     font-weight: 700;
@@ -62,24 +57,25 @@
     border-radius: 8px;
     border: solid 1px rgb(237, 108, 22);
 }
+.postad_btn{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding: .5rem 2rem;
+    color:white;
+    border-radius: 4px;
+    border: solid 2px rgb(79, 93, 115);
+    background: rgb(79, 93, 115);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    top:85%;
+  }
+
 .post-ad>a:hover{
     background-color:  rgb(7,155,213);
     border: solid 1px white;
     border-radius: 8px;
-}
-.boxicon{
-    color:rgb(255, 255, 255);
-    width: 2em;
-    margin: 0 auto 0 .5rem;
-}
-.boxicon:hover{
-    color: rgb(237, 108, 22);
-}
-.handicon{
-    color: black;
-    animation: handanimation 2s infinite;
-    animation-timing-function: ease-in-out;
-    margin-left: 1.2rem;
 }
 @keyframes handanimation{
     30% {
@@ -92,29 +88,80 @@
         transform: translateY(15px);
       }
   }
-.post-ad .icons{
-    width: 20%;
-    margin: 2rem auto;
-}
-.home>.box1{
-    margin-top: 6rem;
-}
-.home>.box1>div{
-    background: url("../img/hm_vector.svg");  
-    width: 100vw;
-    height: 60vw;
+
+ /* Title slider */
+ .post-ad .titleslider {
+    position: relative;
+    width: 100%;
+  }
+  
+  .post-ad .titleslider p {
+    color: rgb(79, 93, 115);
+    font-size: 1.5rem;
+    font-weight: 900;
+    height: 25%;
+    opacity: 0;
+    animation: titledisplay 9s infinite;
+    text-shadow: 2px 7px 5px rgba(255, 255, 255, 0.5), 
+    0px -4px 10px rgba(255, 255, 255, 0.5);
+  }
+  .post-ad .titleslider u{
+    color: rgb(230,46,31);
+    
+  }
+  .titleslider p:nth-child(2) {
+    animation-delay: 3s;
+  }
+  .titleslider p:nth-child(3) {
+    animation-delay: 6s;
+  }
+ 
+  @keyframes titledisplay {
+    0%{
+      opacity: 0;
+    }
+    20%{
+      opacity: 1;
+    }
+    70% {
+      opacity: 0;
+    }
+  }
+  .home .guarantee{
+    margin-bottom: 4rem;
+  }
+  .home .guarantee .bg{
+    margin: 0 auto;
+      width: 70%;
+      height: 50vw;
+      background-repeat: no-repeat;
+      
+  }
+  .home .guarantee .bg img{
+    width: 100%;
+    position: relative;      
+  }
+  .home .guarantee .guarantee-logo{
+    position: absolute;
+    background: url("../img/guarantee.png"); 
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-}
-.home>.box1>div>p{
-    margin-top: -1rem;
-    font-size: 1.2rem;
-    color: rgb(255, 255, 255);
-    box-sizing: border-box;
-    padding: 0.5rem 0 0.5rem 0;
-    background-color: rgb(95 95 95 / 30%);
-}
+    width: 8rem;
+    height: 8rem;
+    z-index: 1;
+    transform: rotate(340deg);
+  }
+  .home .guarantee-text{
+    margin: 0 auto;
+    width: 90%;
+    text-align: left;
+    color: rgb(79, 93, 115);
+  }
+  .home li{
+    font-weight: 600;
+    color: rgb(230,46,31);
+    list-style: none;
+    margin: 1rem 0;
+  }
 /* small */
 @media only screen and (min-width:576px) {
 }

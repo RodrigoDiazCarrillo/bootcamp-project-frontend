@@ -73,7 +73,7 @@ export const Workcards = () => {
             document.getElementById("inticon").className = "stlIcon"}}
             className="internet">
         <a id="inticon" className="stlIcon"><MdLanguage/></a>
-        <p id="inttitle" className="stlTitle">Internet & lan</p>
+        <p id="inttitle" className="stlTitle">Networks</p>
       </a>
       <a href="http://localhost:3000/search" onMouseEnter={() => {document.getElementById("woodtitle").className = "stlTitlehover"
       document.getElementById("woodicon").className = "stlIconhover"}}

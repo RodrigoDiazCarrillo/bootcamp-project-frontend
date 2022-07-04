@@ -1,8 +1,7 @@
-import logo from "../img/logo.svg";
+import logo from "../img/logo-footer.svg";
 import "./Footer.css";
 import { BsFillSuitHeartFill, BsFacebook,BsInstagram,BsTwitter } from "react-icons/bs";
 import { BiMap,BiPhone,BiMailSend} from "react-icons/bi";
-
 
 export const Footer = () => {
     const boxstyle = { color: "red"}
@@ -15,14 +14,17 @@ export const Footer = () => {
       <div className="box0">
         <div>
       <img id="logofooter" src={logo} alt="logo" />
-        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+           Mauris sollicitudin sollicitudin nisi.</p>
         <div className="social">
             <a href="https://www.facebook.com/" target="_blank"><BsFacebook/></a>
             <a href="https://www.instagram.com/accounts/login/" target="_blank"><BsInstagram/></a>
             <a href="https://twitter.com/i/flow/login" target="_blank"><BsTwitter/></a>
           </div>
           </div>
-          <p>Made with <BsFillSuitHeartFill style={boxstyle}/>  by Rodrigo Díaz</p>
+          <div className="madeWith">
+            <p>Made with <BsFillSuitHeartFill style={boxstyle}/>  by Rodrigo Díaz</p>
+          </div>
       </div>
       <div className="box1">
           <p><strong>HomeFIX</strong></p>

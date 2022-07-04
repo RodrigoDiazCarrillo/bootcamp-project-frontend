@@ -1,7 +1,6 @@
 .works{
     display:flex;
     flex-direction: column;
-    margin-bottom: 10rem;
 }
 .works>div{
     display: flex;
@@ -91,7 +90,7 @@
     background-size: cover;
 }
 .stlIcon{
-    color: rgb(237, 108, 22);
+    color: rgb(230,46,31);
     width: 100%;
     font-size: 3rem;
     display: flex;
