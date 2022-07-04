@@ -59,7 +59,7 @@
 .menu .dropdown-content .droplogo{
   height: 4rem;
   width: 9.15rem;
-  margin: 6rem auto;
+  margin: 2rem auto 4rem;
   background:url("../img/logo.svg");
   background-size: cover;
 }
@@ -72,7 +72,7 @@
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-.menu .dropdown-content a, 
+.menu .dropdown-content>a, 
 .menu .dropdown-content>p {
   color: rgb(79, 93, 115);
   text-decoration: none;
@@ -157,11 +157,17 @@
 }
 .menu .social{
   width: 70%;
-  margin: 3rem 15% 0;
-  text-align: left;
+  margin: 4rem auto 0;
+  text-align: center;
 }
 .menu .social>div{
   display: flex;
+}
+.menu .social>div>a{
+  color: rgb(79, 93, 115);
+  text-decoration: none;
+  font-size: 1.5rem;
+  width: 70%;
 }
 
 

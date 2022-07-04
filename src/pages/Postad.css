@@ -2,6 +2,7 @@
     margin: 30vh auto;
     background-color: #f8f9fd;
     width: 70%;
+    padding: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .ad .registered{
@@ -69,7 +70,7 @@
   {
     min-width: 90%;
     max-width: 90%;
-    font-size: .8rem;
+    font-size: 1rem;
     margin: 0.5rem auto;
     padding: 0.5rem;
     color:rgb(79, 93, 115);
@@ -78,9 +79,11 @@
     border: 1px solid rgb(115 115 115 / 20%);
   }
   #postselect{
+    font-weight: 700;
+    font-size: 1rem;
     color: rgb(120 120 120);
     font-weight: 700;
-    width: 94.5%;
+    width: 95%;
     margin: 0 auto;
     padding: 0.5rem;
     background-color: #ffa2a2;

@@ -76,7 +76,7 @@ export const Postad = () => {
         </div>
         <div className="input-container">
           <input
-            placeholder="title"
+            placeholder="Title"
             type="text"
             name="title"
             required="required"
@@ -85,7 +85,7 @@ export const Postad = () => {
         </div>
         <div className="input-container">
           <textarea
-            placeholder="description"
+            placeholder="Description"
             type="text"
             name="description"
             required="required"

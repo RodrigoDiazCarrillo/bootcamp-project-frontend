@@ -36,32 +36,32 @@ export const Register = () => {
     <a href="http://localhost:3000/" ><div className="logo"></div></a>
       <div className="title">Sign In</div>
       <div className="input-container">
-        <p>Email</p>
         <input
+        placeholder="Email"
           type="email"
           name="useremail"
           onChange={(e) => setUser({ ...user, email: e.target.value })}
         />
       </div>
       <div className="input-container">
-        <p>Password</p>
         <input
+        placeholder="Password"
           type="text"
           name="userpassword"
           onChange={(e) => setUser({ ...user, password: e.target.value })}
         />
       </div>
       <div className="input-container">
-        <p>First name</p>
         <input
+        placeholder="First Name"
           type="text"
           name="first_name"
           onChange={(e) => setUser({ ...user, first_name: e.target.value })}
         />
       </div>
       <div className="input-container">
-        <p>Last name</p>
         <input
+        placeholder="Last Name"
           type="text"
           name="last_name"
           onChange={(e) => setUser({ ...user, last_name: e.target.value })}

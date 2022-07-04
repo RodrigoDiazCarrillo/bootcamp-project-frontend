@@ -1,37 +1,47 @@
-.about{
-    background-color: rgb(255, 255, 255);
-    height: 100%;
-    color:rgb(79, 93, 115);
+.about {
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  color: rgb(79, 93, 115);
 }
-#aboutlogo .logo{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+#aboutlogo .logo {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
-.about>p{
-    width: 50%;
-    margin: 2rem auto;
+.about > p {
+  width: 90%;
+  text-align: justify;
+  margin: 2rem auto;
 }
-.about h2{
-
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 1rem;
+.about u {
+  color: rgb(230, 46, 31);
 }
-.about u{
-    color:rgb(230,46,31);
-}
-.about .tower{
-    height: 20rem;
-    width: 100%;
-    margin: 0 auto;
-    background: url("../img/towers.jpg"); 
-    background-size: cover;
+.about .tower {
+  height: 20rem;
+  width: 100%;
+  margin: 2rem auto 0;
+  background: url("../img/towers.jpg");
+  background-size: cover;
 }
 
-.about .box1{
-    margin: 0 auto;
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.about .box1 {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.about .title {
+  position: relative;
+  font-size: 6rem;
+  font-weight: 900;
+  color: #f8f8fa;
+  text-align: left;
+}
+.about .title .subtitle {
+  color: rgb(79, 93, 115);
+  width: 100%;
+  font-size: 2rem;
+  position: absolute;
+  top: 4rem;
+  margin-left: 2rem;
 }

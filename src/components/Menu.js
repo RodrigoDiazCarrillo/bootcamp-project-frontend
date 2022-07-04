@@ -68,7 +68,14 @@ export const Menu = () => {
             <HiMenu style={menustyle} />
           </button>
           <div className="dropdown-content">
-            
+          <div className="social">
+              <h2>Follow us</h2>
+                  <div>
+                    <a href="https://www.facebook.com/" target="_blank"><BsFacebook/></a>
+                    <a href="https://www.instagram.com/accounts/login/" target="_blank"><BsInstagram/></a>
+                    <a href="https://twitter.com/i/flow/login" target="_blank"><BsTwitter/></a>
+                  </div>
+                </div>
               <div className="droplogo"></div>
               <a href="http://localhost:3000/about">
                 <i>
@@ -117,14 +124,7 @@ export const Menu = () => {
                   <p>24 Hour Service - 7 Days a Week 365 Days</p>
                 </div>
               </div>
-              <div className="social">
-              <h2>Follow us</h2>
-                  <div>
-                    <a href="https://www.facebook.com/" target="_blank"><BsFacebook/></a>
-                    <a href="https://www.instagram.com/accounts/login/" target="_blank"><BsInstagram/></a>
-                    <a href="https://twitter.com/i/flow/login" target="_blank"><BsTwitter/></a>
-                  </div>
-                </div>
+             
               
             
           </div>

@@ -36,7 +36,9 @@ export const Home = () => {
             Painting, electricity, plumbing, <u>wood work</u>...
           </p>
           </div>
-        <button className="postad_btn"><FontAwesomeIcon icon={faPlus} /></button>
+        <button onClick={(e) => 
+            {window.location.href = "http://localhost:3000/postad";}}
+            className="postad_btn"><FontAwesomeIcon icon={faPlus} /></button>
         
       </section>
       

@@ -42,6 +42,7 @@ export const Login = () => {
       <div className="title">Sign In</div>
       <div className="input-container">
         <input
+          placeholder="Email"
           type="email"
           name="useremail"
           onChange={(e) => setUser({ ...user, email: e.target.value })}
@@ -50,6 +51,7 @@ export const Login = () => {
       <div className="input-container">
         <input
         autoComplete="off"
+          placeholder="Password"
           type="password"
           name="userpassword"
           onChange={(e) => setUser({ ...user, password: e.target.value })}

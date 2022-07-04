@@ -1,10 +1,10 @@
 .reg .regform {
-    border-radius: 1rem;
+    border-radius: 4px;
+    padding: 1rem;
     margin: 30vh auto;
     background-color: #f8f9fd;
     width: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border: solid 2px rgb(237, 108, 22);
   }
   .reg .registered{
     padding: 2rem;
@@ -24,6 +24,7 @@
   width:80%;
   cursor: pointer;
   margin: 1rem auto;
+  color: rgb(230,46,31);
 }
   .regform .title{
       font-weight: bold;
@@ -32,6 +33,7 @@
   }
   .regform input[type="text"],
   .regform input[type="email"] {
+    font-weight: 700;
     width: 80%;
     margin: .5rem auto;
     height: 1rem;
@@ -66,11 +68,12 @@
   }
 
   .regform .logo{
-    height: 6rem;
-    width: 6.5rem;
-    margin: .5rem auto;
-    background:url("../img/logo-small.svg");
-    background-size: cover;
+    cursor: pointer;
+    height: 5rem;
+    width: 11.4rem;
+    margin: 1.5rem auto;
+    background:url("../img/logo.svg");
+    background-size: cover;    
   }
 
 /* small */

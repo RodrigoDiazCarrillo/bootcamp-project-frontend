@@ -1,10 +1,11 @@
 .login .loginform {
-    border-radius: 1rem;
+  padding: 1rem;
+  color: rgb(79, 93, 115);
+    border-radius: 4px;
     margin: 30vh auto;
     background-color: #f8f9fd;
     width: 50%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border: solid 2px rgb(237, 108, 22);
   }
   .login .logged{
     padding: 2rem;
@@ -26,33 +27,40 @@
   margin: 1rem auto;
 }
   .loginform .title{
+      font-size: 1.5rem;
+      text-align: left;
       font-weight: bold;
-      margin: .5rem auto;
+      margin: .5rem 0 0 1rem;
       align-items: center;
   }
   .loginform input[type="text"],
   .loginform input[type="password"],
   .loginform input[type="email"] {
+    font-weight: 700;
     width: 80%;
     margin: .5rem auto;
     height: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
   }
-  
-  .loginform input[type="submit"] {
-    border-radius: .5rem;
-    cursor: pointer;
-    margin: .5rem auto;
-    margin-top: 1rem ;
-    font-size: 1rem;
-    background: rgb(237, 108, 22);
-    border: 0px;
-    color: #fff;
-    padding: 10px 20px;
+
+  .loginform input[type="submit"]{
+    height: 2.5rem;
+    color: white;
+    padding: 0 1.5rem;
+    border-radius: 4px;
+    border: solid 2px rgb(79, 93, 115);
+    background: rgb(79, 93, 115);
+    margin: 2rem 0 0;
   }
-  
-  .loginform input[type="submit"]:hover {
-    background: rgb(7,155,213);
+  .loginform input[type="submit"]:hover
+  {
+    border: solid 2px rgb(230,46,31);
+    background: rgb(230,46,31);
+  }
+  .loginform input[type="submit"]:active{
+    transform: scale(0.98);
+    border: solid 2px rgb(143, 30, 20);
+    background: rgb(143, 30, 20);
   }
   
   .loginform .button-container {
@@ -68,10 +76,10 @@
 
   .loginform .logo{
     cursor: pointer;
-    height: 6rem;
-    width: 6.5rem;
-    margin: .5rem auto;
-    background:url("../img/logo-small.svg");
+    height: 5rem;
+    width: 11.4rem;
+    margin: 1.5rem auto;
+    background:url("../img/logo.svg");
     background-size: cover;
   }
   .login .logged{

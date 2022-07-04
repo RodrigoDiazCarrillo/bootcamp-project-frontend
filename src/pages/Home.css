@@ -57,7 +57,8 @@
     border-radius: 8px;
     border: solid 1px rgb(237, 108, 22);
 }
-.postad_btn{
+
+  .postad_btn{
     width: 10%;
     display: flex;
     justify-content: center;
@@ -70,6 +71,16 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: absolute;
     top:85%;
+  }
+  .postad_btn:hover
+  {
+    border: solid 2px rgb(230,46,31);
+    background: rgb(230,46,31);
+  }
+  .postad_btn:active{
+    transform: scale(0.98);
+    border: solid 2px rgb(143, 30, 20);
+    background: rgb(143, 30, 20);
   }
 
 .post-ad>a:hover{

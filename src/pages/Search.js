@@ -63,6 +63,9 @@ export const Search = () => {
     if ("Networks"=== filters.find((element) => element === "Networks")) {
       setIncolor(selected);
     }else{setIncolor(unselected);}
+    if ("Woodwork"=== filters.find((element) => element === "Woodwork")) {
+      setWocolor(selected);
+    }else{setWocolor(unselected);}
   }, [filters]);
 
   const roller =(
