@@ -4,9 +4,9 @@
 ## Built With
 
 [![React](https://img.shields.io/badge/React-v18.2.0-blue.svg)](https://reactjs.org/)
-[Javascript](https://img.shields.io/badge/Javascript-JS-yellow.svg)
-[CSS](https://img.shields.io/badge/Css-CSS-sucess.svg)
-[HTML](https://img.shields.io/badge/Html-HTML-critical.svg)]
+[![Javascript](https://img.shields.io/badge/Javascript-JS-yellow.svg)]
+[![CSS](https://img.shields.io/badge/Css-CSS-sucess.svg)]
+[![HTML](https://img.shields.io/badge/Html-HTML-critical.svg)]
 
 
 ## About
