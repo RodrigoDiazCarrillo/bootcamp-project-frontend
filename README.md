@@ -3,11 +3,10 @@
 
 ## Built With
 
-[![React] (https://img.shields.io/static/v1?label=React&message=v18.2.0&color=blue)] (https://reactjs.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![Javascript(https://img.shields.io/static/v1?label=Javascript&message=JS&color=yellow)]
-[![CSS(https://img.shields.io/static/v1?label=Css&message=CSS&color=sucess)]
-[![HTML(https://img.shields.io/static/v1?label=Html&message=HTML&color=critical)]
+[![React](https://img.shields.io/badge/React-v18.2.0-blue.svg)](https://reactjs.org/)
+[![Javascript(https://img.shields.io/badge/Javascript-JS-yellow.svg)]
+[![CSS(https://img.shields.io/badge/Css-CSS-sucess.svg)]
+[![HTML(https://img.shields.io/badge/Html-HTML-critical.svg)]
 
 
 ## About
