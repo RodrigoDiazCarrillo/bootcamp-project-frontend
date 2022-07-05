@@ -98,15 +98,21 @@ html, body {
       width: 5%;
       left:5%;
     }
-    
+    .roller img {
+      height: 40vw;
+      object-fit: cover;
+  }
+  .pic-ctn {
+    height: 30vw;
+}
   }
    /* largue */
 @media only screen and (min-width:950px) {
   .roller>div{
-    top:105%;
+    top:110%;
    }
    .ad_title{
-     margin-top: 10rem;
+     margin-top: 2rem;
    }
    .post-ad{
      height: 30rem;
@@ -118,6 +124,7 @@ html, body {
 }
 /* Extra largue */
 @media only screen and (min-width:1200px) {
+
   .roller>div>p{
     font-size: 1.5rem;
    }

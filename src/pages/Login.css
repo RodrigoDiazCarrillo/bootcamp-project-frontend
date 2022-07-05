@@ -114,11 +114,18 @@
   .login .loginform{
     width: 40%;
 }
+.login .logged{
+  width: 40%;
+}
+
 }
 /* medium */
 @media only screen and (min-width:768px) {
   .login .loginform{
     width: 30%;
+}
+.login .logged{
+  width: 30%;
 }
 }
  /* largue */
@@ -126,10 +133,16 @@
   .login .loginform{
     width: 25%;
 }
+.login .logged{
+  width: 25%;
+}
 }
  /* Extra largue */
 @media only screen and (min-width:1200px) {
   .login .loginform{
     width: 20%;
+}
+.login .logged{
+  width: 20%;
 }
 }

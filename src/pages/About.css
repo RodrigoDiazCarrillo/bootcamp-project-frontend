@@ -34,7 +34,7 @@
   position: relative;
   font-size: 6rem;
   font-weight: 900;
-  color: #f8f8fa;
+  color: rgb(230,46,31);
   text-align: left;
 }
 .about .title .subtitle {
@@ -42,6 +42,6 @@
   width: 100%;
   font-size: 2rem;
   position: absolute;
-  top: 4rem;
+  top: 4.5rem;
   margin-left: 2rem;
 }

@@ -23,7 +23,7 @@ export const Search = () => {
   
   useEffect(() => {
  
-    fetch("http://127.0.0.1:8000/ad", {
+    fetch(`http://127.0.0.1:8000/ad`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -125,6 +125,7 @@ export const Search = () => {
           </button>
         </div>
       </div>
+      
       {!isLoading &&
         ads.map(function (ad, index) {
           //console.log(filters.find(element => element === ad.category))
@@ -133,6 +134,7 @@ export const Search = () => {
               undefined !== filters.find((element) => element === ad.category)
             ) {
               return (
+
                 <div className="card" key={index}>
                   <div className="image"></div>
                   <div className="category">{ad.category}</div>
@@ -142,6 +144,7 @@ export const Search = () => {
                     <span>Contact Me</span>
                   </button>
                 </div>
+  
               );
             }
           } else {
@@ -155,12 +158,13 @@ export const Search = () => {
                   <span>Contact Me</span>
                 </button>
               </div>
+
             );
           }
         }
 
         )}
-         <Footer />
+       
     </div>
     
   );
@@ -181,7 +185,7 @@ export const Search = () => {
       ) : (
         rendercards
       )}
-     
+       <Footer />
     </section>
   );
 };

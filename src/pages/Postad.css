@@ -1,139 +1,134 @@
 .ad .postbox {
-    margin: 30vh auto;
-    background-color: #f8f9fd;
-    width: 70%;
-    padding: 1rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  .ad .registered{
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2rem;
-    color: green;
-    padding:  2rem;
-    margin: 30vh auto;
-    background-color: #f8f9fd;
-    width: 20%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 30vh auto;
+  background-color: #f8f9fd;
+  width: 70%;
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.ad .registered>button{
+.ad .registered {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  color: green;
+  padding: 2rem;
+  margin: 30vh auto;
+  background-color: #f8f9fd;
+  width: 20%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.ad .registered > button {
   height: 2.5rem;
   color: white;
   border-radius: 4px;
   border: solid 2px rgb(79, 93, 115);
   background: rgb(79, 93, 115);
-  margin: 2rem 0 0;
+  margin: 2rem auto 0;
 }
-.ad .registered>button:hover
-{
-  border: solid 2px rgb(230,46,31);
-  background: rgb(230,46,31);
+.ad .registered > button:hover {
+  border: solid 2px rgb(230, 46, 31);
+  background: rgb(230, 46, 31);
 }
-.ad .registered>button:active{
+.ad .registered > button:active {
   transform: scale(0.98);
   border: solid 2px rgb(143, 30, 20);
   background: rgb(143, 30, 20);
 }
-.postbox a{
+.postbox a {
   display: flex;
   text-decoration: none;
   color: black;
-  cursor:alias;
+  cursor: alias;
 }
-.postbox .register{
-  width:80%;
+.postbox .register {
+  width: 80%;
   cursor: pointer;
   margin: 1rem auto;
 }
-.postbox .category{
+.postbox .category {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-  .postbox .title{
-    font-weight: bold;
-    text-align: justify;
-    width: 94%;
-    margin: 0 auto;
-    color: rgb(79, 93, 115);
-    font-size: 1rem;
-  }
-  .postbox .title h2{
-    margin: 0;
-
-  }
-  .postbox input[type="text"],
-  .postbox input[type="email"],
-  .postbox input[type="file"],
-  .postbox textarea
-  {
-    min-width: 90%;
-    max-width: 90%;
-    font-size: 1rem;
-    margin: 0.5rem auto;
-    padding: 0.5rem;
-    color:rgb(79, 93, 115);
-    font-weight: 700;
-    background-color: #ffa2a2;
-    border: 1px solid rgb(115 115 115 / 20%);
-  }
-  #postselect{
-    font-weight: 700;
-    font-size: 1rem;
-    color: rgb(120 120 120);
-    font-weight: 700;
-    width: 95%;
-    margin: 0 auto;
-    padding: 0.5rem;
-    background-color: #ffa2a2;
-    border: 1px solid rgb(115 115 115 / 20%);
-  }
-  .input-container>p{
-    margin: 0 0 0 1rem;
-  }
-  .postbox input[type="submit"] {
-    border-radius: .5rem;
-    cursor: pointer;
-    margin: 2.5rem auto 1rem;
-    font-size: 1rem;
-    border: solid 2px rgb(79, 93, 115);
-    background: rgb(79, 93, 115);
-    border: 0px;
-    color: #fff;
-    padding: 10px 20px;
-  }
-  
-
-  .postbox input[type="submit"]:hover 
-{
-  background: rgb(230,46,31);
+.postbox .title {
+  font-weight: bold;
+  text-align: justify;
+  width: 94%;
+  margin: 0 auto;
+  color: rgb(79, 93, 115);
+  font-size: 1rem;
 }
-.ad .registered>button:active{
+.postbox .title h2 {
+  margin: 0;
+}
+.postbox input[type="text"],
+.postbox input[type="email"],
+.postbox input[type="file"],
+.postbox textarea {
+  min-width: 90%;
+  max-width: 90%;
+  font-size: 1rem;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  color: rgb(79, 93, 115);
+  font-weight: 700;
+  background-color: #ffa2a2;
+  border: 1px solid rgb(115 115 115 / 20%);
+}
+#postselect {
+  font-weight: 700;
+  font-size: 1rem;
+  color: rgb(120 120 120);
+  font-weight: 700;
+  width: 95%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  background-color: #ffa2a2;
+  border: 1px solid rgb(115 115 115 / 20%);
+}
+.input-container > p {
+  margin: 0 0 0 1rem;
+}
+.postbox input[type="submit"] {
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 2.5rem auto 1rem;
+  font-size: 1rem;
+  border: solid 2px rgb(79, 93, 115);
+  background: rgb(79, 93, 115);
+  border: 0px;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.postbox input[type="submit"]:hover {
+  background: rgb(230, 46, 31);
+}
+.ad .registered > button:active {
   transform: scale(0.98);
   background: rgb(143, 30, 20);
 }
-  
-  .postbox.button-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .ad .login-form {
-    background-color: white;
-    padding: 2rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
 
-  .postbox .logo{
-    cursor: pointer;
-    height: 5rem;
-    width: 11.4rem;
-    margin: 1.5rem auto;
-    background:url("../img/logo.svg");
-    background-size: cover;
-  }
-  /**********File Inputs**********/
+.postbox.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.ad .login-form {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.postbox .logo {
+  cursor: pointer;
+  height: 5rem;
+  width: 11.4rem;
+  margin: 1.5rem auto;
+  background: url("../img/logo.svg");
+  background-size: cover;
+}
+/**********File Inputs**********/
 .container-input {
   text-align: center;
   width: 100%;
@@ -170,9 +165,9 @@
 }
 
 .iborrainputfile {
-font-size:16px; 
-font-weight:normal;
-font-weight: 700;
+  font-size: 16px;
+  font-weight: normal;
+  font-weight: 700;
 }
 
 /* style 1 */
@@ -188,27 +183,26 @@ font-weight: 700;
   background-color: #a9a9a9;
 }
 
-  /* small */
-@media only screen and (min-width:576px) {
+/* small */
+@media only screen and (min-width: 576px) {
   .ad .postbox {
     width: 60%;
   }
 }
 /* medium */
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
   .ad .postbox {
     width: 45%;
   }
 }
- /* largue */
-@media only screen and (min-width:992px) {
+/* largue */
+@media only screen and (min-width: 992px) {
   .ad .postbox {
     width: 35%;
   }
-
 }
- /* Extra largue */
-@media only screen and (min-width:1200px) {
+/* Extra largue */
+@media only screen and (min-width: 1200px) {
   .ad .postbox {
     width: 30%;
   }
