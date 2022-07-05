@@ -20,6 +20,7 @@ export const Menu = () => {
   let checkicon = { color: "green", fontSize: "1.5em" };
   let xicon = { color: "red", fontSize: "1.5em" };
   let telicon = { color: "green", fontSize: ".7em" };
+  let lockicon = { color: "rgb(178, 197, 227)"};
 
   return (
     <section className="menu">
@@ -28,7 +29,7 @@ export const Menu = () => {
       </a>
       <div className="menubuttons">
         <div className="telephone">
-          <p className="title">Need Help now? Call us!</p>
+          <p className="phonetitle">Need Help now? Call us!</p>
           <p className="number">
             <BsFillTelephoneFill style={telicon} /> 900-000-000
           </p>
@@ -96,14 +97,14 @@ export const Menu = () => {
                 Post your ad
               </a>
               {token ? (
-                <a href="http://localhost:3000/user">
-                  <FontAwesomeIcon icon={faUserLock} />
+                <a className="user-logged" href="http://localhost:3000/user">
+                  <i><FontAwesomeIcon icon={faUser} /></i>
                   My user
                 </a>
               ) : (
                 <p className="user-logout">
                   <i>
-                    <FontAwesomeIcon icon={faUser} />
+                  <FontAwesomeIcon style={lockicon}icon={faUserLock} />
                   </i>
                   My user
                 </p>

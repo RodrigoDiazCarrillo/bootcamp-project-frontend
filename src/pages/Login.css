@@ -8,12 +8,37 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .login .logged{
-    padding: 2rem;
-    border-radius: 1rem;
+    padding: 1rem;
+    color: rgb(79, 93, 115);
+    border-radius: 4px;
     margin: 30vh auto;
     background-color: #f8f9fd;
-    width: 50%;
-    border: solid 1px rgb(237, 108, 22);
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login .logged>button{
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  padding: .5rem 2rem;
+  color:white;
+  border-radius: 4px;
+  border: solid 2px rgb(79, 93, 115);
+  background: rgb(79, 93, 115);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 2rem auto;
+}
+.login .logged>button:hover
+{
+  border: solid 2px rgb(230,46,31);
+  background: rgb(230,46,31);
+}
+.login .logged>button:active{
+  transform: scale(0.98);
+  border: solid 2px rgb(143, 30, 20);
+  background: rgb(143, 30, 20);
 }
 .loginform a{
   display: flex;
@@ -82,29 +107,8 @@
     background:url("../img/logo.svg");
     background-size: cover;
   }
-  .login .logged{
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    border-radius: 1rem;
-    margin: 30vh auto;
-    background-color: #f8f9fd;
-    width: 20%;
-    border: solid 1px rgb(237, 108, 22);
-}
-.login .logged>button{
-  align-items: center;
-  width: 40%;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  margin: 2rem auto 0.5rem;
-  font-size: 1rem;
-  background: rgb(237, 108, 22);
-  border: 0px;
-  color: #fff;
-  padding: auto;
-  padding: 0.5rem;
-}
+
+
   /* small */
 @media only screen and (min-width:576px) {
   .login .loginform{

@@ -98,7 +98,7 @@ export const Search = () => {
         <div className="title"> Search...<div className="subtitle">Search...</div></div> 
       </div>
         <div className="categories">
-          <div>
+
           <button name="Electricity" style={elcolor} onClick={handleClick}>
             Electricity
           </button>
@@ -111,8 +111,6 @@ export const Search = () => {
           <button name="Plumbing" style={plcolor} onClick={handleClick}>
             Plumbing
           </button>
-          </div>
-          <div>
           <button name="Brickwork" style={brcolor} onClick={handleClick}>
             Brickwork
           </button>
@@ -125,7 +123,6 @@ export const Search = () => {
           <button name="Woodwork" style={wocolor} onClick={handleClick}>
             Woodwork
           </button>
-          </div>
         </div>
       </div>
       {!isLoading &&

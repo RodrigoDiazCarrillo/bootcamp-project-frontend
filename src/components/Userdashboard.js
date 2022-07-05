@@ -61,7 +61,7 @@ export const Userdashboard = () => {
             <p>Email: {email}</p>
 
             <div class="dropdown">
-              <button class="dropbtn">Edit<i><FontAwesomeIcon icon={faPen}/></i></button>
+              <button className="dropbtn">Edit<i><FontAwesomeIcon icon={faPen}/></i></button>
               <div class="dropdown-content">
                 <form name={id}  onSubmit={submit}>
                     <input

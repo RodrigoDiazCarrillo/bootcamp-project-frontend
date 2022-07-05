@@ -175,6 +175,13 @@
   }
 /* small */
 @media only screen and (min-width:576px) {
+  .home .guarantee .bg {
+    width: 60%;
+    height: 42vw;
+  }
+  .home .guarantee .guarantee-logo{
+    margin-left: 4rem;
+  }
 }
 /* medium */
 @media only screen and (min-width:768px) {
@@ -202,19 +209,41 @@
     .handicon{
         font-size: 3rem;
     }
-    .post-ad{
-        width: 60%;
+    .home .guarantee .guarantee-logo{
+      margin-left: 7rem;
     }
+    .home .ad_title{
+      margin-left: 2rem;
+    }
+    .post-ad .titleslider {
+      position: relative;
+      margin-top: 2rem;
+      width: 100%;
+  }
+    
 }
  /* largue */
 @media only screen and (min-width:992px) {
-    .post-ad{
-        width: 50%;
-    }
+  .home .guarantee .guarantee-logo{
+    margin-left: 20%;
+  }
+  .home .guarantee .bg {
+    width: 50%;
+    height: 35vw;
+  }
+  .home .guarantee-text{
+    width: 70%;
+  }
+  .home .guarantee-text p + ul{
+    font-size: 1.2rem;
+  }
+  .post-ad .titleslider {
+    position: relative;
+    margin-top: 6rem;
+    width: 100%;
+}
 }
  /* Extra largue */
 @media only screen and (min-width:1200px) {
-    .post-ad{
-        width: 40%;
-    }
+ 
 }

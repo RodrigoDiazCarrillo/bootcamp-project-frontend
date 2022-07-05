@@ -34,10 +34,10 @@ export const Admindashboard = () => {
     function handleDelete (e){
       fetch(`http://127.0.0.1:8000/members/delete/${e.target.name}`, {
       method: "DELETE",
-      // headers: {
-      //   "Content-Type": "application/json",
-      //   //Authorization: `Bearer ${token.token}`,
-      // },
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
     })
       .then((response) => response.json())
       .then((data) => {
@@ -71,16 +71,16 @@ export const Admindashboard = () => {
 
         <div className="main-admin">
         <h2>{fname}</h2>
-        <p>email: {email}</p>
+        
         <div className="users-table">
         {!isLoading && users.map(function (user,index) { 
         return (
           <div className="user-list" key={index}>
             <p>{user.first_name} {user.last_name}</p>
             <button className="deletebtn" name={user._id} onClick={handleDelete}>Delete User <i><FontAwesomeIcon icon={faBan}/></i></button>
-            <div class="dropdown">
-              <button class="dropbtn">Edit<i><FontAwesomeIcon icon={faPen}/></i></button>
-              <div class="dropdown-content">
+            <div className="dropdown">
+              <button className="dropbtn">Edit<i><FontAwesomeIcon icon={faPen}/></i></button>
+              <div className="dropdown-content">
                 <form name={user._id}  onSubmit={submit}>
                     <input
                     autoComplete="off"
@@ -117,7 +117,7 @@ export const Admindashboard = () => {
                       name="role"
                       onChange={(e) => setEdit({ ...edit, role: e.target.value })}
                     />
-                    <button type="submit" class="updatebtn">Update</button>
+                    <button type="submit" className="updatebtn">Update</button>
                   </form>
               </div>
             </div>

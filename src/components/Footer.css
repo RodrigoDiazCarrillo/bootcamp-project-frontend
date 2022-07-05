@@ -63,14 +63,24 @@
 }
 /* small */
 @media only screen and (min-width:576px) {
-
+    #footer img {
+        width: 10%;
+    }
+    #footer p{
+        font-size: 1rem;
+        width: 50%;
+    }
 }
 /* medium */
 @media only screen and (min-width:768px) {
-
+    #footer img {
+        width: 8%;
+    }
   
 }
  /* largue */
 @media only screen and (min-width:992px) {
-
+    #footer p{
+        width: 40%;
+    }
 }

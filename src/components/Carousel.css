@@ -77,4 +77,52 @@ html, body {
       opacity: 0;
     }
   }
- 
+  @media only screen and (min-width:576px) {
+    .roller>div{
+     top:105%;
+    }
+  }
+  /* medium */
+  @media only screen and (min-width:768px) {
+    .roller>div{
+      height: 7rem;
+      top:100%;
+     }
+     .roller>div>p{
+      font-size: 1.3rem;
+     }
+     .roller h2{
+       margin: 1rem 0 .5rem 1rem;
+     }
+     .postad_btn {
+      width: 5%;
+      left:5%;
+    }
+    
+  }
+   /* largue */
+@media only screen and (min-width:950px) {
+  .roller>div{
+    top:105%;
+   }
+   .ad_title{
+     margin-top: 10rem;
+   }
+   .post-ad{
+     height: 30rem;
+   }
+   .postad_btn {
+    top: 93%;
+    left:3%;
+  }
+}
+/* Extra largue */
+@media only screen and (min-width:1200px) {
+  .roller>div>p{
+    font-size: 1.5rem;
+   }
+   .roller h2{
+     font-size: 1.8rem;
+     margin: 1rem 0 .5rem 1rem;
+   }
+}

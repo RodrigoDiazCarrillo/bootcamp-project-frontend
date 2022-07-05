@@ -103,13 +103,13 @@
     align-items: center;
 
 }
-.categories>div{
+.categories{
   justify-content: center;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
-.categories>div>button{
+.categories>button{
   font-weight: 700;
   border-radius: 4px;
   margin: .2rem .5rem 0 .5rem;
@@ -237,10 +237,13 @@ background: rgb(143, 30, 20);
  
  /* small */
  @media only screen and (min-width:576px) {
-
+ 
 }
 /* medium */
 @media only screen and (min-width:768px) {
+  .categories{
+    display: flex;
+  }
   .cards .card{
     width: 45%;
 }

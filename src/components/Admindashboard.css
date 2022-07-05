@@ -1,14 +1,25 @@
+.main-admin{
+  background-color: rgb(79, 93, 115);
+  color: white;
+  width: 90%;
+  margin: 15vh auto;
+  border-radius: 4px;
+  padding: 1rem 0;
+}
+.main-admin h2{
+  padding: 1rem;
+}
 .users-table{
   margin: 0 auto 2rem;
-  width: 50%;
+  width: 100%;
   border-radius: 8px;
-  background-color: rgb(227, 227, 227);
 }
 .user-list{
-    width: 100%;
-    padding: 1rem;    
-    display: flex;
-    align-items: center;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
 }
 .user-list form{
     padding: 1rem;
@@ -30,7 +41,7 @@
     font-size: 1rem;
     border: none;
     margin-left: 1rem;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
 }
 .user-list>p{
     width: 25%;
@@ -49,6 +60,12 @@
   }
   .user-list .deletebtn {
     background-color: #c70000;
+  }
+  .user-list .deletebtn:hover {
+    background-color: #ff0000;
+  }
+  .user-list .deletebtn:active {
+    transform: scale(0.98);
   }
   .user-list .updatebtn {
     background-color: #c7ba00;

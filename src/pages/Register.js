@@ -46,6 +46,7 @@ export const Register = () => {
       <div className="input-container">
         <input
         placeholder="Password"
+        autoComplete="off"
           type="text"
           name="userpassword"
           onChange={(e) => setUser({ ...user, password: e.target.value })}
@@ -77,7 +78,12 @@ export const Register = () => {
   return (
     <section className="reg">
    
-        {isSubmitted ? <div className="registered">User is successfully registered</div> : renderForm} 
+        {isSubmitted ? 
+        <div className="registered">User is successfully registered <button
+          onClick={(e) => 
+            {window.location.href = "http://localhost:3000/";}}
+          >OK
+        </button></div> : renderForm} 
 
       <Footer />
     </section>

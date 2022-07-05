@@ -9,19 +9,19 @@
   width: 100vw;
   z-index: 1;
 }
-.menubuttons{
+.menubuttons {
   display: flex;
 }
-.usericon{
-    margin-right: .5rem;
-    align-items: center;
-    display: flex;
+.usericon {
+  margin-right: 0.5rem;
+  align-items: center;
+  display: flex;
 }
-.menu .logo{
+.menu .logo {
   height: 4rem;
   width: 9.1rem;
   margin-left: 1rem;
-  background:url("../img/logo.svg");
+  background: url("../img/logo.svg");
   background-size: cover;
 }
 
@@ -32,12 +32,20 @@
   border-radius: 4px;
   border: solid 2px rgb(79, 93, 115);
   background: rgb(79, 93, 115);
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .menu .loginbtn {
   width: 6rem;
-
+}
+.menu .loginbtn:hover, .menu .dropbtn:hover {
+  background-color: rgb(230, 46, 31);
+  border: 1px solid rgb(230, 46, 31);
+}
+.menu .loginbtn:active {
+  background-color: rgb(130, 11, 0);
+  border: 1px solid rgb(130, 11, 0);
+  transform: scale(0.98);
 }
 .menu .dropbtn {
   width: 3rem;
@@ -54,142 +62,155 @@
 .menu .dropdown {
   position: relative;
   display: inline-block;
-
 }
-.menu .dropdown-content .droplogo{
+.menu .dropdown-content .droplogo {
   height: 4rem;
   width: 9.15rem;
   margin: 2rem auto 4rem;
-  background:url("../img/logo.svg");
+  background: url("../img/logo.svg");
   background-size: cover;
 }
 .menu .dropdown-content {
   display: none;
   position: absolute;
-  top:-2rem;
-  left:4rem;
+  top: -2rem;
+  left: 4rem;
   background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-.menu .dropdown-content>a, 
-.menu .dropdown-content>p {
+.menu .dropdown-content > a {
   color: rgb(79, 93, 115);
   text-decoration: none;
   display: block;
   font-size: 1.5rem;
   text-align: left;
   margin: 1rem auto;
-  width: 70%;
+  width: 100%;
   font-weight: 700;
+  padding: 0 0 0 15%;
 }
-.menu .dropdown-content a>i,
-.menu .dropdown-content p>i
-{
-  margin-right: .5rem;
+.menu .dropdown-content a > i,
+.menu .dropdown-content p > i {
+  margin-right: 0.5rem;
+  padding: .2rem;
 }
 
 .menu .dropdown-content a:hover {
-  background-color: rgb(237, 108, 22);
+  background-color: rgb(230, 46, 31);
   color: rgba(255, 255, 255);
-  border-radius: 8px;
+
 }
-.menu .dropdown-content a:active{
-  background-color: rgb(237, 108, 22);
+.menu .dropdown-content a:active {
+  background-color: rgb(161, 33, 21);
   color: rgba(255, 255, 255);
-  border-radius: 8px;
+
 }
 .menu .dropdown:hover .dropdown-content {
-  display:inline;
-  height:100vh;
+  display: inline;
+  height: 100vh;
   width: 50vw;
   border-radius: 0;
-  animation: menu .5s forwards;
-  }
-  @keyframes menu {
-      20% {
-        transform: translateX(.1rem);
-        opacity: 0;
-      }
-      100% {
-        transform: translateX(-50vw);
-        opacity: 1;
-      }
-    }
-.user-logout{
-  color:rgb(100, 100, 100)
+  animation: menu 0.5s forwards;
 }
-.menu .telephone{
+@keyframes menu {
+  20% {
+    transform: translateX(0.1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50vw);
+    opacity: 1;
+  }
+}
+.user-logout {
+  color: rgb(178, 197, 227);
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 1rem auto;
+  width: 70%;
+  font-weight: 700;
+}
+.menu .telephone {
   display: none;
-  margin:0 auto;
+  margin: 0 auto;
   height: 2rem;
   width: 100%;
 }
-.menu .telephone .number{
-  color: #ff4917; 
+.menu .telephone .number {
+  color: #ff4917;
   font-size: 1.2rem;
   font-weight: 900;
   margin: 1rem;
 }
-.menu .telephone .title{
-  color: #7A7A7A;
+.menu .telephone .phonetitle {
+  color: #7a7a7a;
   width: 100%;
   height: 1rem;
   margin: 0;
 }
-.menu .contact{
+.menu .contact {
   width: 70%;
   margin: 3rem 15% 0;
 
   text-align: left;
 }
-.menu h2{
+.menu h2 {
   font-size: 1.5rem;
-  color:rgb(79, 93, 115);
+  color: rgb(79, 93, 115);
 }
-.menu .contact h3{
-  color:rgb(230,46,31);
+.menu .contact h3 {
+  color: rgb(230, 46, 31);
 }
-.menu .contact p{
-  color:rgb(79, 93, 115);
+.menu .contact p {
+  color: rgb(79, 93, 115);
   font-size: 1rem;
   font-weight: 600;
 }
-.menu .social{
+.menu .social {
   width: 70%;
   margin: 4rem auto 0;
   text-align: center;
 }
-.menu .social>div{
+.menu .social > div {
   display: flex;
 }
-.menu .social>div>a{
+.menu .social > div > a {
   color: rgb(79, 93, 115);
   text-decoration: none;
   font-size: 1.5rem;
   width: 70%;
 }
-
+.menu .social > div > a:hover {
+  color: rgb(230, 46, 31);
+  background-color: rgba(0, 0, 0,0);
+  transform: scale(1.2);
+}
+.menu .social > div > a:active {
+  color: rgb(115, 10, 1);
+  background-color: rgba(0, 0, 0,0);
+  transform: scale(1.1);
+}
 
 /* small */
-@media only screen and (min-width:576px) {
+@media only screen and (min-width: 576px) {
 }
 /* medium */
-@media only screen and (min-width:768px) {
-  .menu .logo{
-    width: 13.7rem;
-    background:url("../img/logo.svg");
-    height: 6rem;
-
-  background-size: cover;
+@media only screen and (min-width: 768px) {
+  .menu .loginbtn {
+    width: 10rem;
+}
+  .menu .telephone{
+    display:block;
+    margin-right: 3rem;
   }
   .menu .loginbtn,
-.menu .dropbtn {
-  margin-right: 1rem;
-}
-.usericon{
-  margin-right: 1rem;
-  align-items: center;
-  display: flex;
-}
+  .menu .dropbtn {
+    margin-right: 1rem;
+  }
+  .usericon {
+    margin-right: 1rem;
+    align-items: center;
+    display: flex;
+  }
 }
