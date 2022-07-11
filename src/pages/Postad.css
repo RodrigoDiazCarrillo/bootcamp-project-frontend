@@ -45,6 +45,7 @@
   margin: 1rem auto;
 }
 .postbox .category {
+  padding-top: 1em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -53,7 +54,8 @@
 .postbox .title {
   font-weight: bold;
   text-align: justify;
-  width: 94%;
+  padding-bottom: 1em;
+  /* width: 94%; */
   margin: 0 auto;
   color: rgb(79, 93, 115);
   font-size: 1rem;
@@ -65,10 +67,11 @@
 .postbox input[type="email"],
 .postbox input[type="file"],
 .postbox textarea {
-  min-width: 90%;
-  max-width: 90%;
+  /* min-width: 90%;
+  max-width: 90%; */
+  width: 100%;
   font-size: 1rem;
-  margin: 0.5rem auto;
+  margin: 0 auto .8em;
   padding: 0.5rem;
   color: rgb(79, 93, 115);
   font-weight: 700;
@@ -80,8 +83,8 @@
   font-size: 1rem;
   color: rgb(120 120 120);
   font-weight: 700;
-  width: 95%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0 auto .8em;
   padding: 0.5rem;
   background-color: #ffa2a2;
   border: 1px solid rgb(115 115 115 / 20%);

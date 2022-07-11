@@ -25,12 +25,39 @@
   text-align: justify;
   margin: 1rem auto;
 }
-.card .image{
+.card .Electricity{
+  background: url("../img/electricity.jpg");  
+}
+.card .Painting{
+  background: url("../img/paint.jpg");  
+}
+.card .Technician{
+  background: url("../img/technic.jpg");  
+}
+.card .Plumbing{
+  background: url("../img/plumbing.jpg");  
+}
+.card .Brickwork{
+  background: url("../img/brick.jpg");  
+}
+.card .Metalwork{
+  background: url("../img/metal.jpg");  
+}
+.card .Networks{
+  background: url("../img/internet.jpg");  
+}
+.card .Woodwork{
+  background: url("../img/wood.jpg");  
+}
+.card .Electricity, .card .Painting, .card .Technician, .card .Plumbing, .card .Brickwork 
+, .card .Metalwork, .card .Networks, .card .Woodwork
+{
   width: 100%;
-  height: 50vw;
-  background: url("../img/card_bg.jpg"); 
+  height: 20rem;  
   background-size: cover;
 }
+
+
 
 .card .contactbtn{
     border-radius: 4px;

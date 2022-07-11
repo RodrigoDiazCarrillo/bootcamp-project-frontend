@@ -14,18 +14,18 @@ export const Home = () => {
       <Menu />
 
       <Carousel />
-      <p>
+      
       <div className="ad_title">
         <div className="title"> Search ads<div className="subtitle">Search ads</div></div> 
       </div>
-      </p>
+      
       <Workcards />
       <div className="ad_title">
         <div className="title"> Post an ad<div className="subtitle">Post an ad</div></div> 
       </div>
       <section className="post-ad">
         
-        <div class="titleslider">
+        <div className="titleslider">
           <p>
             Find maintenance and <u>repair services</u>
           </p>

@@ -35,7 +35,7 @@ export const Search = () => {
         if(data.status!="failed"){
           setIsLoading(false);
           setAds(data);
-          console.log(data);
+          //console.log(data);
         }
       });
   }, [isLoading]);
@@ -88,7 +88,6 @@ export const Search = () => {
       setFilters(newfilters);
     }
   }
-  
   const rendercards = (
     
     <div className="cards">
@@ -130,13 +129,14 @@ export const Search = () => {
         ads.map(function (ad, index) {
           //console.log(filters.find(element => element === ad.category))
           if (filters.length > 0) {
+            
             if (
               undefined !== filters.find((element) => element === ad.category)
             ) {
               return (
-
+     
                 <div className="card" key={index}>
-                  <div className="image"></div>
+                  <div className={ad.category}></div>
                   <div className="category">{ad.category}</div>
                   <div className="cardtitle">{ad.title}</div>
                   <div className="description">{ad.description}</div>
@@ -148,9 +148,10 @@ export const Search = () => {
               );
             }
           } else {
+            
             return (
               <div className="card" key={index}>
-                <div className="image"></div>
+                <div className={ad.category}></div>
                 <div className="category">{ad.category}</div>
                 <div className="cardtitle">{ad.title}</div>
                   <div className="description">{ad.description}</div>

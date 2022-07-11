@@ -6,7 +6,7 @@
   justify-content: space-between;
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   z-index: 1;
 }
 .menubuttons {
@@ -124,7 +124,7 @@
   }
 }
 .user-logout {
-  color: rgb(178, 197, 227);
+  color: rgb(148, 164, 190);
   font-size: 1.5rem;
   text-align: left;
   margin: 1rem auto;
@@ -157,6 +157,7 @@
 }
 .menu h2 {
   font-size: 1.5rem;
+  margin-bottom: 1rem;
   color: rgb(79, 93, 115);
 }
 .menu .contact h3 {
@@ -168,7 +169,7 @@
   font-weight: 600;
 }
 .menu .social {
-  width: 70%;
+  width: 50%;
   margin: 4rem auto 0;
   text-align: center;
 }

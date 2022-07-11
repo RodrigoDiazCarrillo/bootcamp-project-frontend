@@ -20,7 +20,7 @@ export const Menu = () => {
   let checkicon = { color: "green", fontSize: "1.5em" };
   let xicon = { color: "red", fontSize: "1.5em" };
   let telicon = { color: "green", fontSize: ".7em" };
-  let lockicon = { color: "rgb(178, 197, 227)"};
+  let lockicon = { color: "rgb(148, 164, 190)"};
 
   return (
     <section className="menu">
@@ -84,7 +84,7 @@ export const Menu = () => {
                 </i>
                 About
               </a>
-              <a href="http://localhost:3000/search">
+              {/* <a href="http://localhost:3000/search">
                 <i>
                   <FontAwesomeIcon icon={faMagnifyingGlassArrowRight} />
                 </i>
@@ -95,7 +95,33 @@ export const Menu = () => {
                   <FontAwesomeIcon icon={faSquarePlus} />
                 </i>
                 Post your ad
-              </a>
+              </a> */}
+               {token ? (
+                <a className="user-logged" href="http://localhost:3000/search">
+                  <i><FontAwesomeIcon icon={faMagnifyingGlassArrowRight} /></i>
+                  Search ads
+                </a>
+              ) : (
+                <p className="user-logout">
+                  <i>
+                  <FontAwesomeIcon style={lockicon}icon={faMagnifyingGlassArrowRight} />
+                  </i>
+                  Search ads
+                </p>
+              )}
+              {token ? (
+                <a className="user-logged" href="http://localhost:3000/postad">
+                  <i><FontAwesomeIcon icon={faSquarePlus} /></i>
+                  Post your ad
+                </a>
+              ) : (
+                <p className="user-logout">
+                  <i>
+                  <FontAwesomeIcon style={lockicon}icon={faSquarePlus} />
+                  </i>
+                  Post your ad
+                </p>
+              )}
               {token ? (
                 <a className="user-logged" href="http://localhost:3000/user">
                   <i><FontAwesomeIcon icon={faUser} /></i>

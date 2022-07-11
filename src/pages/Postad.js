@@ -57,7 +57,7 @@ export const Postad = () => {
             Sunday appointments.
           </p>
         </div>
-        <div className="category">
+        <div className="input-container">
           <select
             value={optionsState}
             onChange={(e) => setAd({ ...ad, category: e.target.value })}
@@ -101,7 +101,7 @@ export const Postad = () => {
             className="inputfile inputfile-1"
             data-multiple-caption="{count} archivos seleccionados"
             required="required"
-            onChange={(e) => setAd({ ...ad, image: "image"})}
+            onChange={(e) => setAd({ ...ad, image: e.target.value})}
             multiple
           />
           <label htmlFor="file-1">
